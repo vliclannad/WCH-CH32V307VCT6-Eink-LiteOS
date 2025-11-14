@@ -17,6 +17,7 @@ FRAME_HEADER1 = 0xA5
 FRAME_HEADER2 = 0x5A                               
 CMD_TYPE_IMAGE = 0xD1
 CMD_IMAGE_TRANSFER = 0x01
+<<<<<<< HEAD
 MAX_IMAGE_DATA_LEN = 1022  # 最大图片数据长度（总包数1 + 包序号1 + 图像数据1022 = 1024字节）
 
 
@@ -39,6 +40,9 @@ def crc16_calculate(data):
             else:
                 crc >>= 1
     return crc 
+=======
+MAX_IMAGE_DATA_LEN = 1022  # 最大图片数据长度(1024-2) 
+>>>>>>> 46d6483c1bfe9628b6953e5b2c01064a49835570
 
 
 def extract_image_array(file_path):
