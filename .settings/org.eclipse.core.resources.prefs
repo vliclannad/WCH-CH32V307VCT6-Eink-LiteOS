@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//Device/EPD.h=GBK
+encoding//Device/ESP8266.c=UTF-8
+encoding//Device/ESP8266.h=UTF-8
+encoding//Device/image.h=GBK
+encoding//LiteOS/kernel/include/los_event.h=GBK
+encoding//Startup/startup_ch32v30x_D8C.S=GBK
+encoding//User/ch32v30x_it.c=UTF-8
+encoding//User/ch32v30x_it.h=GBK
+encoding//User/main.c=UTF-8
+encoding//User/system_ch32v30x.c=GBK
+encoding//User/thread_Eink.c=UTF-8
+encoding//User/thread_WiFi.c=UTF-8
+encoding//User/user_usart.c=GBK
+encoding/<project>=UTF-8
