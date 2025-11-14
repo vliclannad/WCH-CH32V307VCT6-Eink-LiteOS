@@ -474,7 +474,7 @@ Discarded input sections
                 0x0000000000000000       0x26 ./Peripheral/src/ch32v30x_dac.o
  .debug_info    0x0000000000000000      0xdbd ./Peripheral/src/ch32v30x_dac.o
  .debug_abbrev  0x0000000000000000      0x2fe ./Peripheral/src/ch32v30x_dac.o
- .debug_loc     0x0000000000000000      0x238 ./Peripheral/src/ch32v30x_dac.o
+ .debug_loc     0x0000000000000000      0x23b ./Peripheral/src/ch32v30x_dac.o
  .debug_aranges
                 0x0000000000000000       0x78 ./Peripheral/src/ch32v30x_dac.o
  .debug_ranges  0x0000000000000000       0x68 ./Peripheral/src/ch32v30x_dac.o
@@ -2487,11 +2487,11 @@ Discarded input sections
                 0x0000000000000000      0x10a ./LiteOS/kernel/src/mm/los_memory.o
  .rodata.LOS_MemIntegrityCheck.str1.4
                 0x0000000000000000      0x2a2 ./LiteOS/kernel/src/mm/los_memory.o
- .rodata.__FUNCTION__.6997
+ .rodata.__FUNCTION__.6995
                 0x0000000000000000       0x19 ./LiteOS/kernel/src/mm/los_memory.o
- .rodata.__FUNCTION__.7003
+ .rodata.__FUNCTION__.7001
                 0x0000000000000000       0x17 ./LiteOS/kernel/src/mm/los_memory.o
- .rodata.__FUNCTION__.7014
+ .rodata.__FUNCTION__.7012
                 0x0000000000000000       0x13 ./LiteOS/kernel/src/mm/los_memory.o
  .text          0x0000000000000000        0x0 ./LiteOS/kernel/src/los_event.o
  .data          0x0000000000000000        0x0 ./LiteOS/kernel/src/los_event.o
@@ -2830,6 +2830,41 @@ Discarded input sections
  .debug_line    0x0000000000000000       0xff ./Fonts/font8.o
  .debug_str     0x0000000000000000      0x240 ./Fonts/font8.o
  .comment       0x0000000000000000       0x34 ./Fonts/font8.o
+ .text          0x0000000000000000        0x0 ./Device/generated/Image_Asuka_frames.o
+ .data          0x0000000000000000        0x0 ./Device/generated/Image_Asuka_frames.o
+ .bss           0x0000000000000000        0x0 ./Device/generated/Image_Asuka_frames.o
+ .text.Send_Image_Asuka_Frames
+                0x0000000000000000       0x42 ./Device/generated/Image_Asuka_frames.o
+ .data.Image_Asuka_frames
+                0x0000000000000000       0x20 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_1
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_2
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_3
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_4
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_5
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_6
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_7
+                0x0000000000000000      0x408 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_8
+                0x0000000000000000      0x358 ./Device/generated/Image_Asuka_frames.o
+ .rodata.Image_Asuka_frame_sizes
+                0x0000000000000000       0x10 ./Device/generated/Image_Asuka_frames.o
+ .debug_info    0x0000000000000000      0x250 ./Device/generated/Image_Asuka_frames.o
+ .debug_abbrev  0x0000000000000000       0xf4 ./Device/generated/Image_Asuka_frames.o
+ .debug_loc     0x0000000000000000       0x5b ./Device/generated/Image_Asuka_frames.o
+ .debug_aranges
+                0x0000000000000000       0x20 ./Device/generated/Image_Asuka_frames.o
+ .debug_ranges  0x0000000000000000       0x28 ./Device/generated/Image_Asuka_frames.o
+ .debug_line    0x0000000000000000      0x192 ./Device/generated/Image_Asuka_frames.o
+ .debug_str     0x0000000000000000      0x2c6 ./Device/generated/Image_Asuka_frames.o
+ .comment       0x0000000000000000       0x34 ./Device/generated/Image_Asuka_frames.o
+ .debug_frame   0x0000000000000000       0x40 ./Device/generated/Image_Asuka_frames.o
  .text          0x0000000000000000        0x0 ./Device/EPD.o
  .data          0x0000000000000000        0x0 ./Device/EPD.o
  .bss           0x0000000000000000        0x0 ./Device/EPD.o
@@ -3655,6 +3690,7 @@ LOAD ./Fonts/font20.o
 LOAD ./Fonts/font24.o
 LOAD ./Fonts/font24CN.o
 LOAD ./Fonts/font8.o
+LOAD ./Device/generated/Image_Asuka_frames.o
 LOAD ./Device/EPD.o
 LOAD ./Device/EPD_SPI.o
 LOAD ./Device/ESP8266.o
@@ -3694,7 +3730,7 @@ END GROUP
                 0x00000000000001c0                . = ALIGN (0x40)
  *fill*         0x00000000000001a4       0x1c 
 
-.text           0x00000000000001c0     0x7a30
+.text           0x00000000000001c0     0x7cf0
                 0x00000000000001c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000000001c0       0x8e ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
@@ -3738,982 +3774,988 @@ END GROUP
  .text.HardFault_Handler
                 0x0000000000000360       0x40 ./User/ch32v30x_it.o
                 0x0000000000000360                HardFault_Handler
- .text.RecvFrame_Init
-                0x00000000000003a0        0xe ./User/ch32v30x_it.o
-                0x00000000000003a0                RecvFrame_Init
+ .text.CRC16_Calculate
+                0x00000000000003a0       0x3e ./User/ch32v30x_it.o
+                0x00000000000003a0                CRC16_Calculate
  .text.recDataProcessing
-                0x00000000000003ae       0x9c ./User/ch32v30x_it.o
-                0x00000000000003ae                recDataProcessing
+                0x00000000000003de      0x192 ./User/ch32v30x_it.o
+                0x00000000000003de                recDataProcessing
  .text.UART6_IRQHandler
-                0x000000000000044a       0x90 ./User/ch32v30x_it.o
-                0x000000000000044a                UART6_IRQHandler
+                0x0000000000000570       0x90 ./User/ch32v30x_it.o
+                0x0000000000000570                UART6_IRQHandler
  .text.taskSample
-                0x00000000000004da       0x90 ./User/main.o
-                0x00000000000004da                taskSample
+                0x0000000000000600       0x90 ./User/main.o
+                0x0000000000000600                taskSample
  .text.startup.main
-                0x000000000000056a       0x58 ./User/main.o
-                0x000000000000056a                main
+                0x0000000000000690       0x58 ./User/main.o
+                0x0000000000000690                main
  .text.SystemInit
-                0x00000000000005c2       0xfa ./User/system_ch32v30x.o
-                0x00000000000005c2                SystemInit
+                0x00000000000006e8       0xfa ./User/system_ch32v30x.o
+                0x00000000000006e8                SystemInit
  .text.SystemCoreClockUpdate
-                0x00000000000006bc      0x12e ./User/system_ch32v30x.o
-                0x00000000000006bc                SystemCoreClockUpdate
+                0x00000000000007e2      0x12e ./User/system_ch32v30x.o
+                0x00000000000007e2                SystemCoreClockUpdate
  .text.Button_Scan
-                0x00000000000007ea       0x68 ./User/thread_Eink.o
-                0x00000000000007ea                Button_Scan
+                0x0000000000000910       0x68 ./User/thread_Eink.o
+                0x0000000000000910                Button_Scan
  .text.Button_Init
-                0x0000000000000852       0x2a ./User/thread_Eink.o
-                0x0000000000000852                Button_Init
+                0x0000000000000978       0x2c ./User/thread_Eink.o
+                0x0000000000000978                Button_Init
  .text.Display_First
-                0x000000000000087c       0xc0 ./User/thread_Eink.o
-                0x000000000000087c                Display_First
+                0x00000000000009a4       0xc2 ./User/thread_Eink.o
+                0x00000000000009a4                Display_First
  .text.thread_Eink_Start
-                0x000000000000093c       0x86 ./User/thread_Eink.o
-                0x000000000000093c                thread_Eink_Start
+                0x0000000000000a66       0x86 ./User/thread_Eink.o
+                0x0000000000000a66                thread_Eink_Start
  .text.ProcessImageData
-                0x00000000000009c2       0x56 ./User/thread_WiFi.o
-                0x00000000000009c2                ProcessImageData
+                0x0000000000000aec       0x56 ./User/thread_WiFi.o
+                0x0000000000000aec                ProcessImageData
  .text.ProcessFrame
-                0x0000000000000a18       0x2c ./User/thread_WiFi.o
-                0x0000000000000a18                ProcessFrame
+                0x0000000000000b42       0x40 ./User/thread_WiFi.o
+                0x0000000000000b42                ProcessFrame
  .text.thread_WIFI_Start
-                0x0000000000000a44       0x94 ./User/thread_WiFi.o
-                0x0000000000000a44                thread_WIFI_Start
+                0x0000000000000b82       0x90 ./User/thread_WiFi.o
+                0x0000000000000b82                thread_WIFI_Start
  .text.USER_UART_SendString
-                0x0000000000000ad8       0x22 ./User/user_usart.o
-                0x0000000000000ad8                USER_UART_SendString
+                0x0000000000000c12       0x22 ./User/user_usart.o
+                0x0000000000000c12                USER_UART_SendString
  .text.vector_handler
-                0x0000000000000afa        0x2 ./Startup/startup_ch32v30x_D8C.o
-                0x0000000000000afa                EXTI2_IRQHandler
-                0x0000000000000afa                TIM8_TRG_COM_IRQHandler
-                0x0000000000000afa                TIM8_CC_IRQHandler
-                0x0000000000000afa                UART8_IRQHandler
-                0x0000000000000afa                TIM1_CC_IRQHandler
-                0x0000000000000afa                TIM6_IRQHandler
-                0x0000000000000afa                PVD_IRQHandler
-                0x0000000000000afa                SDIO_IRQHandler
-                0x0000000000000afa                TIM9_BRK_IRQHandler
-                0x0000000000000afa                DMA2_Channel8_IRQHandler
-                0x0000000000000afa                CAN2_RX1_IRQHandler
-                0x0000000000000afa                EXTI3_IRQHandler
-                0x0000000000000afa                USBHS_IRQHandler
-                0x0000000000000afa                DMA2_Channel9_IRQHandler
-                0x0000000000000afa                TIM10_CC_IRQHandler
-                0x0000000000000afa                USBFS_IRQHandler
-                0x0000000000000afa                EXTI0_IRQHandler
-                0x0000000000000afa                I2C2_EV_IRQHandler
-                0x0000000000000afa                TIM10_TRG_COM_IRQHandler
-                0x0000000000000afa                CAN2_SCE_IRQHandler
-                0x0000000000000afa                ADC1_2_IRQHandler
-                0x0000000000000afa                Break_Point_Handler
-                0x0000000000000afa                SPI1_IRQHandler
-                0x0000000000000afa                TAMPER_IRQHandler
-                0x0000000000000afa                CAN2_RX0_IRQHandler
-                0x0000000000000afa                TIM8_UP_IRQHandler
-                0x0000000000000afa                Ecall_M_Mode_Handler
-                0x0000000000000afa                DMA2_Channel2_IRQHandler
-                0x0000000000000afa                DMA1_Channel4_IRQHandler
-                0x0000000000000afa                TIM9_UP_IRQHandler
-                0x0000000000000afa                USART3_IRQHandler
-                0x0000000000000afa                RTC_IRQHandler
-                0x0000000000000afa                DMA1_Channel7_IRQHandler
-                0x0000000000000afa                CAN1_RX1_IRQHandler
-                0x0000000000000afa                DVP_IRQHandler
-                0x0000000000000afa                UART5_IRQHandler
-                0x0000000000000afa                TIM4_IRQHandler
-                0x0000000000000afa                DMA2_Channel1_IRQHandler
-                0x0000000000000afa                I2C1_EV_IRQHandler
-                0x0000000000000afa                DMA1_Channel6_IRQHandler
-                0x0000000000000afa                UART4_IRQHandler
-                0x0000000000000afa                DMA2_Channel4_IRQHandler
-                0x0000000000000afa                TIM3_IRQHandler
-                0x0000000000000afa                RCC_IRQHandler
-                0x0000000000000afa                TIM1_TRG_COM_IRQHandler
-                0x0000000000000afa                DMA1_Channel1_IRQHandler
-                0x0000000000000afa                DMA2_Channel7_IRQHandler
-                0x0000000000000afa                EXTI15_10_IRQHandler
-                0x0000000000000afa                TIM7_IRQHandler
-                0x0000000000000afa                CAN2_TX_IRQHandler
-                0x0000000000000afa                TIM5_IRQHandler
-                0x0000000000000afa                EXTI9_5_IRQHandler
-                0x0000000000000afa                ETH_WKUP_IRQHandler
-                0x0000000000000afa                SPI2_IRQHandler
-                0x0000000000000afa                TIM10_BRK_IRQHandler
-                0x0000000000000afa                TIM9_CC_IRQHandler
-                0x0000000000000afa                DMA2_Channel5_IRQHandler
-                0x0000000000000afa                DMA1_Channel5_IRQHandler
-                0x0000000000000afa                EXTI4_IRQHandler
-                0x0000000000000afa                USB_LP_CAN1_RX0_IRQHandler
-                0x0000000000000afa                RNG_IRQHandler
-                0x0000000000000afa                USB_HP_CAN1_TX_IRQHandler
-                0x0000000000000afa                DMA1_Channel3_IRQHandler
-                0x0000000000000afa                ETH_IRQHandler
-                0x0000000000000afa                TIM1_UP_IRQHandler
-                0x0000000000000afa                WWDG_IRQHandler
-                0x0000000000000afa                USBHSWakeup_IRQHandler
-                0x0000000000000afa                DMA2_Channel11_IRQHandler
-                0x0000000000000afa                Ecall_U_Mode_Handler
-                0x0000000000000afa                DMA2_Channel6_IRQHandler
-                0x0000000000000afa                TIM2_IRQHandler
-                0x0000000000000afa                TIM1_BRK_IRQHandler
-                0x0000000000000afa                DMA2_Channel10_IRQHandler
-                0x0000000000000afa                EXTI1_IRQHandler
-                0x0000000000000afa                RTCAlarm_IRQHandler
-                0x0000000000000afa                TIM10_UP_IRQHandler
-                0x0000000000000afa                TIM9_TRG_COM_IRQHandler
-                0x0000000000000afa                UART7_IRQHandler
-                0x0000000000000afa                USART2_IRQHandler
-                0x0000000000000afa                I2C2_ER_IRQHandler
-                0x0000000000000afa                DMA1_Channel2_IRQHandler
-                0x0000000000000afa                TIM8_BRK_IRQHandler
-                0x0000000000000afa                CAN1_SCE_IRQHandler
-                0x0000000000000afa                FLASH_IRQHandler
-                0x0000000000000afa                USART1_IRQHandler
-                0x0000000000000afa                SPI3_IRQHandler
-                0x0000000000000afa                I2C1_ER_IRQHandler
-                0x0000000000000afa                USBWakeUp_IRQHandler
-                0x0000000000000afa                DMA2_Channel3_IRQHandler
+                0x0000000000000c34        0x2 ./Startup/startup_ch32v30x_D8C.o
+                0x0000000000000c34                EXTI2_IRQHandler
+                0x0000000000000c34                TIM8_TRG_COM_IRQHandler
+                0x0000000000000c34                TIM8_CC_IRQHandler
+                0x0000000000000c34                UART8_IRQHandler
+                0x0000000000000c34                TIM1_CC_IRQHandler
+                0x0000000000000c34                TIM6_IRQHandler
+                0x0000000000000c34                PVD_IRQHandler
+                0x0000000000000c34                SDIO_IRQHandler
+                0x0000000000000c34                TIM9_BRK_IRQHandler
+                0x0000000000000c34                DMA2_Channel8_IRQHandler
+                0x0000000000000c34                CAN2_RX1_IRQHandler
+                0x0000000000000c34                EXTI3_IRQHandler
+                0x0000000000000c34                USBHS_IRQHandler
+                0x0000000000000c34                DMA2_Channel9_IRQHandler
+                0x0000000000000c34                TIM10_CC_IRQHandler
+                0x0000000000000c34                USBFS_IRQHandler
+                0x0000000000000c34                EXTI0_IRQHandler
+                0x0000000000000c34                I2C2_EV_IRQHandler
+                0x0000000000000c34                TIM10_TRG_COM_IRQHandler
+                0x0000000000000c34                CAN2_SCE_IRQHandler
+                0x0000000000000c34                ADC1_2_IRQHandler
+                0x0000000000000c34                Break_Point_Handler
+                0x0000000000000c34                SPI1_IRQHandler
+                0x0000000000000c34                TAMPER_IRQHandler
+                0x0000000000000c34                CAN2_RX0_IRQHandler
+                0x0000000000000c34                TIM8_UP_IRQHandler
+                0x0000000000000c34                Ecall_M_Mode_Handler
+                0x0000000000000c34                DMA2_Channel2_IRQHandler
+                0x0000000000000c34                DMA1_Channel4_IRQHandler
+                0x0000000000000c34                TIM9_UP_IRQHandler
+                0x0000000000000c34                USART3_IRQHandler
+                0x0000000000000c34                RTC_IRQHandler
+                0x0000000000000c34                DMA1_Channel7_IRQHandler
+                0x0000000000000c34                CAN1_RX1_IRQHandler
+                0x0000000000000c34                DVP_IRQHandler
+                0x0000000000000c34                UART5_IRQHandler
+                0x0000000000000c34                TIM4_IRQHandler
+                0x0000000000000c34                DMA2_Channel1_IRQHandler
+                0x0000000000000c34                I2C1_EV_IRQHandler
+                0x0000000000000c34                DMA1_Channel6_IRQHandler
+                0x0000000000000c34                UART4_IRQHandler
+                0x0000000000000c34                DMA2_Channel4_IRQHandler
+                0x0000000000000c34                TIM3_IRQHandler
+                0x0000000000000c34                RCC_IRQHandler
+                0x0000000000000c34                TIM1_TRG_COM_IRQHandler
+                0x0000000000000c34                DMA1_Channel1_IRQHandler
+                0x0000000000000c34                DMA2_Channel7_IRQHandler
+                0x0000000000000c34                EXTI15_10_IRQHandler
+                0x0000000000000c34                TIM7_IRQHandler
+                0x0000000000000c34                CAN2_TX_IRQHandler
+                0x0000000000000c34                TIM5_IRQHandler
+                0x0000000000000c34                EXTI9_5_IRQHandler
+                0x0000000000000c34                ETH_WKUP_IRQHandler
+                0x0000000000000c34                SPI2_IRQHandler
+                0x0000000000000c34                TIM10_BRK_IRQHandler
+                0x0000000000000c34                TIM9_CC_IRQHandler
+                0x0000000000000c34                DMA2_Channel5_IRQHandler
+                0x0000000000000c34                DMA1_Channel5_IRQHandler
+                0x0000000000000c34                EXTI4_IRQHandler
+                0x0000000000000c34                USB_LP_CAN1_RX0_IRQHandler
+                0x0000000000000c34                RNG_IRQHandler
+                0x0000000000000c34                USB_HP_CAN1_TX_IRQHandler
+                0x0000000000000c34                DMA1_Channel3_IRQHandler
+                0x0000000000000c34                ETH_IRQHandler
+                0x0000000000000c34                TIM1_UP_IRQHandler
+                0x0000000000000c34                WWDG_IRQHandler
+                0x0000000000000c34                USBHSWakeup_IRQHandler
+                0x0000000000000c34                DMA2_Channel11_IRQHandler
+                0x0000000000000c34                Ecall_U_Mode_Handler
+                0x0000000000000c34                DMA2_Channel6_IRQHandler
+                0x0000000000000c34                TIM2_IRQHandler
+                0x0000000000000c34                TIM1_BRK_IRQHandler
+                0x0000000000000c34                DMA2_Channel10_IRQHandler
+                0x0000000000000c34                EXTI1_IRQHandler
+                0x0000000000000c34                RTCAlarm_IRQHandler
+                0x0000000000000c34                TIM10_UP_IRQHandler
+                0x0000000000000c34                TIM9_TRG_COM_IRQHandler
+                0x0000000000000c34                UART7_IRQHandler
+                0x0000000000000c34                USART2_IRQHandler
+                0x0000000000000c34                I2C2_ER_IRQHandler
+                0x0000000000000c34                DMA1_Channel2_IRQHandler
+                0x0000000000000c34                TIM8_BRK_IRQHandler
+                0x0000000000000c34                CAN1_SCE_IRQHandler
+                0x0000000000000c34                FLASH_IRQHandler
+                0x0000000000000c34                USART1_IRQHandler
+                0x0000000000000c34                SPI3_IRQHandler
+                0x0000000000000c34                I2C1_ER_IRQHandler
+                0x0000000000000c34                USBWakeUp_IRQHandler
+                0x0000000000000c34                DMA2_Channel3_IRQHandler
  .text.handle_reset
-                0x0000000000000afc       0x92 ./Startup/startup_ch32v30x_D8C.o
-                0x0000000000000afc                handle_reset
+                0x0000000000000c36       0x92 ./Startup/startup_ch32v30x_D8C.o
+                0x0000000000000c36                handle_reset
  .text.DBGMCU_GetCHIPID
-                0x0000000000000b8e        0xa ./Peripheral/src/ch32v30x_dbgmcu.o
-                0x0000000000000b8e                DBGMCU_GetCHIPID
+                0x0000000000000cc8        0xa ./Peripheral/src/ch32v30x_dbgmcu.o
+                0x0000000000000cc8                DBGMCU_GetCHIPID
  .text.GPIO_Init
-                0x0000000000000b98       0xc0 ./Peripheral/src/ch32v30x_gpio.o
-                0x0000000000000b98                GPIO_Init
+                0x0000000000000cd2       0xc0 ./Peripheral/src/ch32v30x_gpio.o
+                0x0000000000000cd2                GPIO_Init
  .text.GPIO_ReadInputDataBit
-                0x0000000000000c58        0xa ./Peripheral/src/ch32v30x_gpio.o
-                0x0000000000000c58                GPIO_ReadInputDataBit
+                0x0000000000000d92        0xa ./Peripheral/src/ch32v30x_gpio.o
+                0x0000000000000d92                GPIO_ReadInputDataBit
  .text.GPIO_SetBits
-                0x0000000000000c62        0x4 ./Peripheral/src/ch32v30x_gpio.o
-                0x0000000000000c62                GPIO_SetBits
+                0x0000000000000d9c        0x4 ./Peripheral/src/ch32v30x_gpio.o
+                0x0000000000000d9c                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x0000000000000c66        0x4 ./Peripheral/src/ch32v30x_gpio.o
-                0x0000000000000c66                GPIO_ResetBits
+                0x0000000000000da0        0x4 ./Peripheral/src/ch32v30x_gpio.o
+                0x0000000000000da0                GPIO_ResetBits
  .text.NVIC_PriorityGroupConfig
-                0x0000000000000c6a        0x6 ./Peripheral/src/ch32v30x_misc.o
-                0x0000000000000c6a                NVIC_PriorityGroupConfig
+                0x0000000000000da4        0x6 ./Peripheral/src/ch32v30x_misc.o
+                0x0000000000000da4                NVIC_PriorityGroupConfig
  .text.NVIC_Init
-                0x0000000000000c70       0x5c ./Peripheral/src/ch32v30x_misc.o
-                0x0000000000000c70                NVIC_Init
+                0x0000000000000daa       0x5c ./Peripheral/src/ch32v30x_misc.o
+                0x0000000000000daa                NVIC_Init
  .text.RCC_GetClocksFreq
-                0x0000000000000ccc      0x17a ./Peripheral/src/ch32v30x_rcc.o
-                0x0000000000000ccc                RCC_GetClocksFreq
+                0x0000000000000e06      0x17a ./Peripheral/src/ch32v30x_rcc.o
+                0x0000000000000e06                RCC_GetClocksFreq
  .text.RCC_APB2PeriphClockCmd
-                0x0000000000000e46       0x1e ./Peripheral/src/ch32v30x_rcc.o
-                0x0000000000000e46                RCC_APB2PeriphClockCmd
+                0x0000000000000f80       0x1e ./Peripheral/src/ch32v30x_rcc.o
+                0x0000000000000f80                RCC_APB2PeriphClockCmd
  .text.RCC_APB1PeriphClockCmd
-                0x0000000000000e64       0x1e ./Peripheral/src/ch32v30x_rcc.o
-                0x0000000000000e64                RCC_APB1PeriphClockCmd
+                0x0000000000000f9e       0x1e ./Peripheral/src/ch32v30x_rcc.o
+                0x0000000000000f9e                RCC_APB1PeriphClockCmd
  .text.USART_Init
-                0x0000000000000e82       0x8e ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000e82                USART_Init
+                0x0000000000000fbc       0x8e ./Peripheral/src/ch32v30x_usart.o
+                0x0000000000000fbc                USART_Init
  .text.USART_Cmd
-                0x0000000000000f10       0x16 ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000f10                USART_Cmd
+                0x000000000000104a       0x16 ./Peripheral/src/ch32v30x_usart.o
+                0x000000000000104a                USART_Cmd
  .text.USART_ITConfig
-                0x0000000000000f26       0x36 ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000f26                USART_ITConfig
+                0x0000000000001060       0x36 ./Peripheral/src/ch32v30x_usart.o
+                0x0000000000001060                USART_ITConfig
  .text.USART_SendData
-                0x0000000000000f5c        0x8 ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000f5c                USART_SendData
+                0x0000000000001096        0x8 ./Peripheral/src/ch32v30x_usart.o
+                0x0000000000001096                USART_SendData
  .text.USART_ReceiveData
-                0x0000000000000f64        0x8 ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000f64                USART_ReceiveData
+                0x000000000000109e        0x8 ./Peripheral/src/ch32v30x_usart.o
+                0x000000000000109e                USART_ReceiveData
  .text.USART_GetFlagStatus
-                0x0000000000000f6c        0xa ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000f6c                USART_GetFlagStatus
+                0x00000000000010a6        0xa ./Peripheral/src/ch32v30x_usart.o
+                0x00000000000010a6                USART_GetFlagStatus
  .text.USART_GetITStatus
-                0x0000000000000f76       0x3c ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000f76                USART_GetITStatus
+                0x00000000000010b0       0x3c ./Peripheral/src/ch32v30x_usart.o
+                0x00000000000010b0                USART_GetITStatus
  .text.USART_ClearITPendingBit
-                0x0000000000000fb2       0x14 ./Peripheral/src/ch32v30x_usart.o
-                0x0000000000000fb2                USART_ClearITPendingBit
+                0x00000000000010ec       0x14 ./Peripheral/src/ch32v30x_usart.o
+                0x00000000000010ec                USART_ClearITPendingBit
  .text.OsDoExcHook
-                0x0000000000000fc6       0x20 ./LiteOS/utils/los_debug.o
-                0x0000000000000fc6                OsDoExcHook
+                0x0000000000001100       0x20 ./LiteOS/utils/los_debug.o
+                0x0000000000001100                OsDoExcHook
  .text.OsLogLevelCheck
-                0x0000000000000fe6       0x3a ./LiteOS/utils/los_debug.o
-                0x0000000000000fe6                OsLogLevelCheck
+                0x0000000000001120       0x3a ./LiteOS/utils/los_debug.o
+                0x0000000000001120                OsLogLevelCheck
  .text.SecMemcpyError
-                0x0000000000001020       0x62 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+                0x000000000000115a       0x62 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
  .text.memcpy_s
-                0x0000000000001082       0x40 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
-                0x0000000000001082                memcpy_s
+                0x00000000000011bc       0x40 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+                0x00000000000011bc                memcpy_s
  .text.memset_s
-                0x00000000000010c2       0x52 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
-                0x00000000000010c2                memset_s
+                0x00000000000011fc       0x52 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+                0x00000000000011fc                memset_s
  .text.OsMemMergeNode
-                0x0000000000001114       0x12 ./LiteOS/kernel/src/mm/los_memory.o
+                0x000000000000124e       0x12 ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemAddrValidCheck
-                0x0000000000001126       0x16 ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001260       0x16 ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsGetRealPtr
-                0x000000000000113c       0x6c ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001276       0x6c ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemListDelete
-                0x00000000000011a8       0x3c ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000000012e2       0x3c ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemIsNodeValid
-                0x00000000000011e4       0x2c ./LiteOS/kernel/src/mm/los_memory.o
+                0x000000000000131e       0x2c ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemCheckUsedNode
-                0x0000000000001210       0x78 ./LiteOS/kernel/src/mm/los_memory.o
+                0x000000000000134a       0x78 ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemSlGet
-                0x0000000000001288       0x46 ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000000013c2       0x46 ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemFreeListIndexGet
-                0x00000000000012ce       0x3c ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001408       0x3c ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemFreeNodeAdd
-                0x000000000000130a       0x54 ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001444       0x54 ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemFreeNodeDelete
-                0x000000000000135e       0x1c ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001498       0x1c ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemSplitNode
-                0x000000000000137a       0x36 ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000000014b4       0x36 ./LiteOS/kernel/src/mm/los_memory.o
  .text.OsMemFree
-                0x00000000000013b0       0x70 ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000000014ea       0x70 ./LiteOS/kernel/src/mm/los_memory.o
  .text.LOS_MemInit
-                0x0000000000001420       0x82 ./LiteOS/kernel/src/mm/los_memory.o
-                0x0000000000001420                LOS_MemInit
+                0x000000000000155a       0x82 ./LiteOS/kernel/src/mm/los_memory.o
+                0x000000000000155a                LOS_MemInit
  .text.LOS_MemFree
-                0x00000000000014a2       0x4c ./LiteOS/kernel/src/mm/los_memory.o
-                0x00000000000014a2                LOS_MemFree
+                0x00000000000015dc       0x4c ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000000015dc                LOS_MemFree
  .text.LOS_MemInfoGet
-                0x00000000000014ee       0xda ./LiteOS/kernel/src/mm/los_memory.o
-                0x00000000000014ee                LOS_MemInfoGet
+                0x0000000000001628       0xdc ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001628                LOS_MemInfoGet
  .text.OsMemAlloc
-                0x00000000000015c8      0x208 ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000001704      0x208 ./LiteOS/kernel/src/mm/los_memory.o
  .text.LOS_MemAlloc
-                0x00000000000017d0       0x52 ./LiteOS/kernel/src/mm/los_memory.o
-                0x00000000000017d0                LOS_MemAlloc
+                0x000000000000190c       0x52 ./LiteOS/kernel/src/mm/los_memory.o
+                0x000000000000190c                LOS_MemAlloc
  .text.LOS_MemAllocAlign
-                0x0000000000001822       0x94 ./LiteOS/kernel/src/mm/los_memory.o
-                0x0000000000001822                LOS_MemAllocAlign
+                0x000000000000195e       0x94 ./LiteOS/kernel/src/mm/los_memory.o
+                0x000000000000195e                LOS_MemAllocAlign
  .text.OsMemSystemInit
-                0x00000000000018b6       0x3c ./LiteOS/kernel/src/mm/los_memory.o
-                0x00000000000018b6                OsMemSystemInit
+                0x00000000000019f2       0x3c ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000000019f2                OsMemSystemInit
  .text.LOS_EventInit
-                0x00000000000018f2       0x1c ./LiteOS/kernel/src/los_event.o
-                0x00000000000018f2                LOS_EventInit
+                0x0000000000001a2e       0x1c ./LiteOS/kernel/src/los_event.o
+                0x0000000000001a2e                LOS_EventInit
  .text.LOS_EventPoll
-                0x000000000000190e       0x56 ./LiteOS/kernel/src/los_event.o
-                0x000000000000190e                LOS_EventPoll
+                0x0000000000001a4a       0x56 ./LiteOS/kernel/src/los_event.o
+                0x0000000000001a4a                LOS_EventPoll
  .text.LOS_EventRead
-                0x0000000000001964       0xfc ./LiteOS/kernel/src/los_event.o
-                0x0000000000001964                LOS_EventRead
+                0x0000000000001aa0       0xfc ./LiteOS/kernel/src/los_event.o
+                0x0000000000001aa0                LOS_EventRead
  .text.LOS_EventWrite
-                0x0000000000001a60       0xa8 ./LiteOS/kernel/src/los_event.o
-                0x0000000000001a60                LOS_EventWrite
+                0x0000000000001b9c       0xa8 ./LiteOS/kernel/src/los_event.o
+                0x0000000000001b9c                LOS_EventWrite
  .text.LOS_Panic
-                0x0000000000001b08       0x2e ./LiteOS/kernel/src/los_init.o
-                0x0000000000001b08                LOS_Panic
+                0x0000000000001c44       0x2e ./LiteOS/kernel/src/los_init.o
+                0x0000000000001c44                LOS_Panic
  .text.LOS_Start
-                0x0000000000001b36       0x14 ./LiteOS/kernel/src/los_init.o
-                0x0000000000001b36                LOS_Start
+                0x0000000000001c72       0x14 ./LiteOS/kernel/src/los_init.o
+                0x0000000000001c72                LOS_Start
  .text.LOS_KernelInit
-                0x0000000000001b4a       0xc4 ./LiteOS/kernel/src/los_init.o
-                0x0000000000001b4a                LOS_KernelInit
+                0x0000000000001c86       0xc4 ./LiteOS/kernel/src/los_init.o
+                0x0000000000001c86                LOS_KernelInit
  .text.OsMuxInit
-                0x0000000000001c0e       0x54 ./LiteOS/kernel/src/los_mux.o
-                0x0000000000001c0e                OsMuxInit
+                0x0000000000001d4a       0x54 ./LiteOS/kernel/src/los_mux.o
+                0x0000000000001d4a                OsMuxInit
  .text.OsQueueInit
-                0x0000000000001c62       0x68 ./LiteOS/kernel/src/los_queue.o
-                0x0000000000001c62                OsQueueInit
+                0x0000000000001d9e       0x68 ./LiteOS/kernel/src/los_queue.o
+                0x0000000000001d9e                OsQueueInit
  .text.LOS_QueueCreate
-                0x0000000000001cca       0xd0 ./LiteOS/kernel/src/los_queue.o
-                0x0000000000001cca                LOS_QueueCreate
+                0x0000000000001e06       0xd0 ./LiteOS/kernel/src/los_queue.o
+                0x0000000000001e06                LOS_QueueCreate
  .text.OsQueueOperate
-                0x0000000000001d9a      0x214 ./LiteOS/kernel/src/los_queue.o
-                0x0000000000001d9a                OsQueueOperate
+                0x0000000000001ed6      0x214 ./LiteOS/kernel/src/los_queue.o
+                0x0000000000001ed6                OsQueueOperate
  .text.LOS_QueueReadCopy
-                0x0000000000001fae       0x64 ./LiteOS/kernel/src/los_queue.o
-                0x0000000000001fae                LOS_QueueReadCopy
+                0x00000000000020ea       0x64 ./LiteOS/kernel/src/los_queue.o
+                0x00000000000020ea                LOS_QueueReadCopy
  .text.LOS_QueueWriteCopy
-                0x0000000000002012       0x60 ./LiteOS/kernel/src/los_queue.o
-                0x0000000000002012                LOS_QueueWriteCopy
+                0x000000000000214e       0x60 ./LiteOS/kernel/src/los_queue.o
+                0x000000000000214e                LOS_QueueWriteCopy
  .text.OsTimeSliceUpdate.part.1
-                0x0000000000002072       0x36 ./LiteOS/kernel/src/los_sched.o
+                0x00000000000021ae       0x36 ./LiteOS/kernel/src/los_sched.o
  .text.OsSchedRealSleepTimeSet
-                0x00000000000020a8        0xe ./LiteOS/kernel/src/los_sched.o
-                0x00000000000020a8                OsSchedRealSleepTimeSet
+                0x00000000000021e4        0xe ./LiteOS/kernel/src/los_sched.o
+                0x00000000000021e4                OsSchedRealSleepTimeSet
  .text.OsSchedUpdateSchedTimeBase
-                0x00000000000020b6       0x2a ./LiteOS/kernel/src/los_sched.o
-                0x00000000000020b6                OsSchedUpdateSchedTimeBase
+                0x00000000000021f2       0x2a ./LiteOS/kernel/src/los_sched.o
+                0x00000000000021f2                OsSchedUpdateSchedTimeBase
  .text.OsSchedTimerBaseReset
-                0x00000000000020e0       0x60 ./LiteOS/kernel/src/los_sched.o
-                0x00000000000020e0                OsSchedTimerBaseReset
+                0x000000000000221c       0x60 ./LiteOS/kernel/src/los_sched.o
+                0x000000000000221c                OsSchedTimerBaseReset
  .text.OsGetCurrSchedTimeCycle
-                0x0000000000002140       0xc8 ./LiteOS/kernel/src/los_sched.o
-                0x0000000000002140                OsGetCurrSchedTimeCycle
+                0x000000000000227c       0xc8 ./LiteOS/kernel/src/los_sched.o
+                0x000000000000227c                OsGetCurrSchedTimeCycle
  .text.OsSchedSetNextExpireTime
-                0x0000000000002208      0x10a ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002344      0x10c ./LiteOS/kernel/src/los_sched.o
  .text.OsSchedUpdateExpireTime
-                0x0000000000002312       0x72 ./LiteOS/kernel/src/los_sched.o
-                0x0000000000002312                OsSchedUpdateExpireTime
+                0x0000000000002450       0x74 ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002450                OsSchedUpdateExpireTime
  .text.OsSchedTaskEnQueue
-                0x0000000000002384       0xf8 ./LiteOS/kernel/src/los_sched.o
-                0x0000000000002384                OsSchedTaskEnQueue
+                0x00000000000024c4       0xf8 ./LiteOS/kernel/src/los_sched.o
+                0x00000000000024c4                OsSchedTaskEnQueue
  .text.OsSchedTaskDeQueue
-                0x000000000000247c       0x54 ./LiteOS/kernel/src/los_sched.o
-                0x000000000000247c                OsSchedTaskDeQueue
+                0x00000000000025bc       0x54 ./LiteOS/kernel/src/los_sched.o
+                0x00000000000025bc                OsSchedTaskDeQueue
  .text.OsSchedTaskExit
-                0x00000000000024d0       0x48 ./LiteOS/kernel/src/los_sched.o
-                0x00000000000024d0                OsSchedTaskExit
+                0x0000000000002610       0x48 ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002610                OsSchedTaskExit
  .text.OsSchedYield
-                0x0000000000002518        0xa ./LiteOS/kernel/src/los_sched.o
-                0x0000000000002518                OsSchedYield
+                0x0000000000002658        0xa ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002658                OsSchedYield
  .text.OsSchedDelay
-                0x0000000000002522        0xc ./LiteOS/kernel/src/los_sched.o
-                0x0000000000002522                OsSchedDelay
+                0x0000000000002662        0xc ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002662                OsSchedDelay
  .text.OsSchedTaskWait
-                0x000000000000252e       0x2c ./LiteOS/kernel/src/los_sched.o
-                0x000000000000252e                OsSchedTaskWait
+                0x000000000000266e       0x2c ./LiteOS/kernel/src/los_sched.o
+                0x000000000000266e                OsSchedTaskWait
  .text.OsSchedTaskWake
-                0x000000000000255a       0x42 ./LiteOS/kernel/src/los_sched.o
-                0x000000000000255a                OsSchedTaskWake
+                0x000000000000269a       0x42 ./LiteOS/kernel/src/los_sched.o
+                0x000000000000269a                OsSchedTaskWake
  .text.OsSchedSetIdleTaskSchedParam
-                0x000000000000259c        0xc ./LiteOS/kernel/src/los_sched.o
-                0x000000000000259c                OsSchedSetIdleTaskSchedParam
+                0x00000000000026dc        0xc ./LiteOS/kernel/src/los_sched.o
+                0x00000000000026dc                OsSchedSetIdleTaskSchedParam
  .text.OsSchedSwtmrScanRegister
-                0x00000000000025a8        0xe ./LiteOS/kernel/src/los_sched.o
-                0x00000000000025a8                OsSchedSwtmrScanRegister
+                0x00000000000026e8        0xe ./LiteOS/kernel/src/los_sched.o
+                0x00000000000026e8                OsSchedSwtmrScanRegister
  .text.OsSchedInit
-                0x00000000000025b6       0x40 ./LiteOS/kernel/src/los_sched.o
-                0x00000000000025b6                OsSchedInit
+                0x00000000000026f6       0x40 ./LiteOS/kernel/src/los_sched.o
+                0x00000000000026f6                OsSchedInit
  .text.OsGetTopTask
-                0x00000000000025f6       0x38 ./LiteOS/kernel/src/los_sched.o
-                0x00000000000025f6                OsGetTopTask
+                0x0000000000002736       0x38 ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002736                OsGetTopTask
  .text.OsSchedStart
-                0x000000000000262e       0x7a ./LiteOS/kernel/src/los_sched.o
-                0x000000000000262e                OsSchedStart
+                0x000000000000276e       0x7a ./LiteOS/kernel/src/los_sched.o
+                0x000000000000276e                OsSchedStart
  .text.OsSchedTaskSwitch
-                0x00000000000026a8       0xe6 ./LiteOS/kernel/src/los_sched.o
-                0x00000000000026a8                OsSchedTaskSwitch
+                0x00000000000027e8       0xe6 ./LiteOS/kernel/src/los_sched.o
+                0x00000000000027e8                OsSchedTaskSwitch
  .text.LOS_SchedTickHandler
-                0x000000000000278e      0x142 ./LiteOS/kernel/src/los_sched.o
-                0x000000000000278e                LOS_SchedTickHandler
+                0x00000000000028ce      0x142 ./LiteOS/kernel/src/los_sched.o
+                0x00000000000028ce                LOS_SchedTickHandler
  .text.LOS_Schedule
-                0x00000000000028d0       0x1a ./LiteOS/kernel/src/los_sched.o
-                0x00000000000028d0                LOS_Schedule
+                0x0000000000002a10       0x1a ./LiteOS/kernel/src/los_sched.o
+                0x0000000000002a10                LOS_Schedule
  .text.OsSemInit
-                0x00000000000028ea       0x5a ./LiteOS/kernel/src/los_sem.o
-                0x00000000000028ea                OsSemInit
+                0x0000000000002a2a       0x5a ./LiteOS/kernel/src/los_sem.o
+                0x0000000000002a2a                OsSemInit
  .text.OsGetSortLinkNextExpireTime
-                0x0000000000002944       0x7c ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002a84       0x7c ./LiteOS/kernel/src/los_sortlink.o
  .text.OsSortLinkInit
-                0x00000000000029c0        0x8 ./LiteOS/kernel/src/los_sortlink.o
-                0x00000000000029c0                OsSortLinkInit
+                0x0000000000002b00        0x8 ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002b00                OsSortLinkInit
  .text.OsDeleteNodeSortLink
-                0x00000000000029c8       0x1a ./LiteOS/kernel/src/los_sortlink.o
-                0x00000000000029c8                OsDeleteNodeSortLink
+                0x0000000000002b08       0x1a ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002b08                OsDeleteNodeSortLink
  .text.OsAdd2SortLink
-                0x00000000000029e2       0xbe ./LiteOS/kernel/src/los_sortlink.o
-                0x00000000000029e2                OsAdd2SortLink
+                0x0000000000002b22       0xbe ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002b22                OsAdd2SortLink
  .text.OsDeleteSortLink
-                0x0000000000002aa0       0x4e ./LiteOS/kernel/src/los_sortlink.o
-                0x0000000000002aa0                OsDeleteSortLink
+                0x0000000000002be0       0x4e ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002be0                OsDeleteSortLink
  .text.OsGetSortLinkAttribute
-                0x0000000000002aee       0x38 ./LiteOS/kernel/src/los_sortlink.o
-                0x0000000000002aee                OsGetSortLinkAttribute
+                0x0000000000002c2e       0x38 ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002c2e                OsGetSortLinkAttribute
  .text.OsGetNextExpireTime
-                0x0000000000002b26       0x4c ./LiteOS/kernel/src/los_sortlink.o
-                0x0000000000002b26                OsGetNextExpireTime
+                0x0000000000002c66       0x4c ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002c66                OsGetNextExpireTime
  .text.OsSortLinkGetTargetExpireTime
-                0x0000000000002b72       0x48 ./LiteOS/kernel/src/los_sortlink.o
-                0x0000000000002b72                OsSortLinkGetTargetExpireTime
+                0x0000000000002cb2       0x48 ./LiteOS/kernel/src/los_sortlink.o
+                0x0000000000002cb2                OsSortLinkGetTargetExpireTime
  .text.OsSwtmrTask
-                0x0000000000002bba       0x84 ./LiteOS/kernel/src/los_swtmr.o
-                0x0000000000002bba                OsSwtmrTask
+                0x0000000000002cfa       0x84 ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000002cfa                OsSwtmrTask
  .text.OsSwtmrDelete
-                0x0000000000002c3e       0x34 ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000002d7e       0x34 ./LiteOS/kernel/src/los_swtmr.o
  .text.OsSwtmrTaskCreate
-                0x0000000000002c72       0x3e ./LiteOS/kernel/src/los_swtmr.o
-                0x0000000000002c72                OsSwtmrTaskCreate
+                0x0000000000002db2       0x3e ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000002db2                OsSwtmrTaskCreate
  .text.OsSwtmrFindAlignPos
-                0x0000000000002cb0      0x122 ./LiteOS/kernel/src/los_swtmr.o
-                0x0000000000002cb0                OsSwtmrFindAlignPos
+                0x0000000000002df0      0x122 ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000002df0                OsSwtmrFindAlignPos
  .text.OsSwtmrStart
-                0x0000000000002dd2       0x7a ./LiteOS/kernel/src/los_swtmr.o
-                0x0000000000002dd2                OsSwtmrStart
+                0x0000000000002f12       0x7a ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000002f12                OsSwtmrStart
  .text.OsSwtmrScan
-                0x0000000000002e4c       0xa4 ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000002f8c       0xa4 ./LiteOS/kernel/src/los_swtmr.o
  .text.OsSwtmrInit
-                0x0000000000002ef0       0xd8 ./LiteOS/kernel/src/los_swtmr.o
-                0x0000000000002ef0                OsSwtmrInit
+                0x0000000000003030       0xd8 ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000000003030                OsSwtmrInit
  .text.OsRecyleFinishedTask
-                0x0000000000002fc8       0x4c ./LiteOS/kernel/src/los_task.o
+                0x0000000000003108       0x4c ./LiteOS/kernel/src/los_task.o
  .text.OsIdleTask
-                0x0000000000003014       0x1a ./LiteOS/kernel/src/los_task.o
-                0x0000000000003014                OsIdleTask
+                0x0000000000003154       0x1a ./LiteOS/kernel/src/los_task.o
+                0x0000000000003154                OsIdleTask
  .text.OsPmEnterHandlerSet
-                0x000000000000302e        0xe ./LiteOS/kernel/src/los_task.o
-                0x000000000000302e                OsPmEnterHandlerSet
+                0x000000000000316e        0xe ./LiteOS/kernel/src/los_task.o
+                0x000000000000316e                OsPmEnterHandlerSet
  .text.OsTaskInit
-                0x000000000000303c       0xc0 ./LiteOS/kernel/src/los_task.o
-                0x000000000000303c                OsTaskInit
+                0x000000000000317c       0xc0 ./LiteOS/kernel/src/los_task.o
+                0x000000000000317c                OsTaskInit
  .text.OsNewTaskInit
-                0x00000000000030fc       0x58 ./LiteOS/kernel/src/los_task.o
-                0x00000000000030fc                OsNewTaskInit
+                0x000000000000323c       0x58 ./LiteOS/kernel/src/los_task.o
+                0x000000000000323c                OsNewTaskInit
  .text.LOS_TaskCreateOnly
-                0x0000000000003154      0x126 ./LiteOS/kernel/src/los_task.o
-                0x0000000000003154                LOS_TaskCreateOnly
+                0x0000000000003294      0x126 ./LiteOS/kernel/src/los_task.o
+                0x0000000000003294                LOS_TaskCreateOnly
  .text.OsIdleTaskCreate
-                0x000000000000327a       0x5e ./LiteOS/kernel/src/los_task.o
-                0x000000000000327a                OsIdleTaskCreate
+                0x00000000000033ba       0x5e ./LiteOS/kernel/src/los_task.o
+                0x00000000000033ba                OsIdleTaskCreate
  .text.LOS_TaskCreate
-                0x00000000000032d8       0x40 ./LiteOS/kernel/src/los_task.o
-                0x00000000000032d8                LOS_TaskCreate
+                0x0000000000003418       0x40 ./LiteOS/kernel/src/los_task.o
+                0x0000000000003418                LOS_TaskCreate
  .text.LOS_TaskDelete
-                0x0000000000003318      0x118 ./LiteOS/kernel/src/los_task.o
-                0x0000000000003318                LOS_TaskDelete
+                0x0000000000003458      0x118 ./LiteOS/kernel/src/los_task.o
+                0x0000000000003458                LOS_TaskDelete
  .text.OsTaskEntry
-                0x0000000000003430       0x3a ./LiteOS/kernel/src/los_task.o
-                0x0000000000003430                OsTaskEntry
+                0x0000000000003570       0x3a ./LiteOS/kernel/src/los_task.o
+                0x0000000000003570                OsTaskEntry
  .text.LOS_TaskYield
-                0x000000000000346a       0x22 ./LiteOS/kernel/src/los_task.o
-                0x000000000000346a                LOS_TaskYield
+                0x00000000000035aa       0x22 ./LiteOS/kernel/src/los_task.o
+                0x00000000000035aa                LOS_TaskYield
  .text.LOS_TaskDelay
-                0x000000000000348c       0x50 ./LiteOS/kernel/src/los_task.o
-                0x000000000000348c                LOS_TaskDelay
+                0x00000000000035cc       0x50 ./LiteOS/kernel/src/los_task.o
+                0x00000000000035cc                LOS_TaskDelay
  .text.LOS_TaskLock
-                0x00000000000034dc       0x1a ./LiteOS/kernel/src/los_task.o
-                0x00000000000034dc                LOS_TaskLock
+                0x000000000000361c       0x1a ./LiteOS/kernel/src/los_task.o
+                0x000000000000361c                LOS_TaskLock
  .text.LOS_TaskUnlock
-                0x00000000000034f6       0x30 ./LiteOS/kernel/src/los_task.o
-                0x00000000000034f6                LOS_TaskUnlock
+                0x0000000000003636       0x30 ./LiteOS/kernel/src/los_task.o
+                0x0000000000003636                LOS_TaskUnlock
  .text.LOS_TaskIsRunning
-                0x0000000000003526        0x6 ./LiteOS/kernel/src/los_task.o
-                0x0000000000003526                LOS_TaskIsRunning
+                0x0000000000003666        0x6 ./LiteOS/kernel/src/los_task.o
+                0x0000000000003666                LOS_TaskIsRunning
  .text.OsTickHandler
-                0x000000000000352c       0x10 ./LiteOS/kernel/src/los_tick.o
-                0x000000000000352c                OsTickHandler
+                0x000000000000366c       0x10 ./LiteOS/kernel/src/los_tick.o
+                0x000000000000366c                OsTickHandler
  .text.LOS_TickCountGet
-                0x000000000000353c       0x22 ./LiteOS/kernel/src/los_tick.o
-                0x000000000000353c                LOS_TickCountGet
+                0x000000000000367c       0x22 ./LiteOS/kernel/src/los_tick.o
+                0x000000000000367c                LOS_TickCountGet
  .text.HalSysExit
-                0x000000000000355e        0xa ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
-                0x000000000000355e                HalSysExit
+                0x000000000000369e        0xa ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+                0x000000000000369e                HalSysExit
  .text.HalArchInit
-                0x0000000000003568        0xa ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
-                0x0000000000003568                HalArchInit
+                0x00000000000036a8        0xa ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+                0x00000000000036a8                HalArchInit
  .text.HalTskStackInit
-                0x0000000000003572       0x52 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
-                0x0000000000003572                HalTskStackInit
+                0x00000000000036b2       0x52 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+                0x00000000000036b2                HalTskStackInit
  .text.HalStartSchedule
-                0x00000000000035c4       0x24 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
-                0x00000000000035c4                HalStartSchedule
+                0x0000000000003704       0x24 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+                0x0000000000003704                HalStartSchedule
  .text.HalTaskSchedule
-                0x00000000000035e8        0xc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
-                0x00000000000035e8                HalTaskSchedule
+                0x0000000000003728        0xc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+                0x0000000000003728                HalTaskSchedule
  .text.HalTaskSwitch
-                0x00000000000035f4       0x16 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
-                0x00000000000035f4                HalTaskSwitch
- *fill*         0x000000000000360a        0x2 
+                0x0000000000003734       0x16 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+                0x0000000000003734                HalTaskSwitch
+ *fill*         0x000000000000374a        0x2 
  .text.vector_handler
-                0x000000000000360c       0xba ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
-                0x000000000000360c                SW_Handler
+                0x000000000000374c       0xba ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
+                0x000000000000374c                SW_Handler
  .text.HalHwiInit
-                0x00000000000036c6        0x2 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
-                0x00000000000036c6                HalHwiInit
+                0x0000000000003806        0x2 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+                0x0000000000003806                HalHwiInit
  .text.HalIntEnter
-                0x00000000000036c8        0xc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
-                0x00000000000036c8                HalIntEnter
+                0x0000000000003808        0xc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+                0x0000000000003808                HalIntEnter
  .text.HalIsIntActive
-                0x00000000000036d4        0xa ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
-                0x00000000000036d4                HalIsIntActive
+                0x0000000000003814        0xa ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+                0x0000000000003814                HalIsIntActive
  .text.HalTickStart
-                0x00000000000036de       0x5e ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
-                0x00000000000036de                HalTickStart
+                0x000000000000381e       0x5e ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+                0x000000000000381e                HalTickStart
  .text.SysTick_Handler
-                0x000000000000373c        0xc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
-                0x000000000000373c                SysTick_Handler
+                0x000000000000387c        0xc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+                0x000000000000387c                SysTick_Handler
  .text.HalSysTickReload
-                0x0000000000003748       0x3a ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
-                0x0000000000003748                HalSysTickReload
+                0x0000000000003888       0x3a ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+                0x0000000000003888                HalSysTickReload
  .text.HalGetTickCycle
-                0x0000000000003782       0x26 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
-                0x0000000000003782                HalGetTickCycle
+                0x00000000000038c2       0x26 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+                0x00000000000038c2                HalGetTickCycle
  .text.HalEnterSleep
-                0x00000000000037a8       0x16 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
-                0x00000000000037a8                HalEnterSleep
+                0x00000000000038e8       0x16 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+                0x00000000000038e8                HalEnterSleep
  .text.OsPmSleepTimeSet
-                0x00000000000037be        0xa ./LiteOS/components/power/los_pm.o
+                0x00000000000038fe        0xa ./LiteOS/components/power/los_pm.o
  .text.OsPmEnter
-                0x00000000000037c8      0x394 ./LiteOS/components/power/los_pm.o
+                0x0000000000003908      0x394 ./LiteOS/components/power/los_pm.o
  .text.LOS_PmRegister
-                0x0000000000003b5c       0x76 ./LiteOS/components/power/los_pm.o
-                0x0000000000003b5c                LOS_PmRegister
+                0x0000000000003c9c       0x76 ./LiteOS/components/power/los_pm.o
+                0x0000000000003c9c                LOS_PmRegister
  .text.OsPmInit
-                0x0000000000003bd2       0x90 ./LiteOS/components/power/los_pm.o
-                0x0000000000003bd2                OsPmInit
+                0x0000000000003d12       0x90 ./LiteOS/components/power/los_pm.o
+                0x0000000000003d12                OsPmInit
  .text.EPD_Init
-                0x0000000000003c62       0x42 ./Device/EPD.o
-                0x0000000000003c62                EPD_Init
+                0x0000000000003da2       0x42 ./Device/EPD.o
+                0x0000000000003da2                EPD_Init
  .text.EPD_Init_Fast
-                0x0000000000003ca4       0x40 ./Device/EPD.o
-                0x0000000000003ca4                EPD_Init_Fast
+                0x0000000000003de4       0x40 ./Device/EPD.o
+                0x0000000000003de4                EPD_Init_Fast
  .text.EPD_Sleep
-                0x0000000000003ce4       0x1c ./Device/EPD.o
-                0x0000000000003ce4                EPD_Sleep
+                0x0000000000003e24       0x1c ./Device/EPD.o
+                0x0000000000003e24                EPD_Sleep
  .text.EPD_Update
-                0x0000000000003d00       0x12 ./Device/EPD.o
-                0x0000000000003d00                EPD_Update
+                0x0000000000003e40       0x12 ./Device/EPD.o
+                0x0000000000003e40                EPD_Update
  .text.EPD_DisplayImage
-                0x0000000000003d12       0x5e ./Device/EPD.o
-                0x0000000000003d12                EPD_DisplayImage
+                0x0000000000003e52       0x5e ./Device/EPD.o
+                0x0000000000003e52                EPD_DisplayImage
  .text.EPD_DisplayImage_Paragraph
-                0x0000000000003d70       0x5a ./Device/EPD.o
-                0x0000000000003d70                EPD_DisplayImage_Paragraph
+                0x0000000000003eb0       0x5a ./Device/EPD.o
+                0x0000000000003eb0                EPD_DisplayImage_Paragraph
  .text.EPD_SPI_Init
-                0x0000000000003dca       0x56 ./Device/EPD_SPI.o
-                0x0000000000003dca                EPD_SPI_Init
+                0x0000000000003f0a       0x56 ./Device/EPD_SPI.o
+                0x0000000000003f0a                EPD_SPI_Init
  .text.EPD_Write
-                0x0000000000003e20       0x52 ./Device/EPD_SPI.o
-                0x0000000000003e20                EPD_Write
+                0x0000000000003f60       0x52 ./Device/EPD_SPI.o
+                0x0000000000003f60                EPD_Write
  .text.EPD_WriteCMD
-                0x0000000000003e72       0x38 ./Device/EPD_SPI.o
-                0x0000000000003e72                EPD_WriteCMD
+                0x0000000000003fb2       0x38 ./Device/EPD_SPI.o
+                0x0000000000003fb2                EPD_WriteCMD
  .text.EPD_WriteDATA
-                0x0000000000003eaa       0x38 ./Device/EPD_SPI.o
-                0x0000000000003eaa                EPD_WriteDATA
+                0x0000000000003fea       0x38 ./Device/EPD_SPI.o
+                0x0000000000003fea                EPD_WriteDATA
  .text.EPD_CheckBusy
-                0x0000000000003ee2       0x1e ./Device/EPD_SPI.o
-                0x0000000000003ee2                EPD_CheckBusy
+                0x0000000000004022       0x1e ./Device/EPD_SPI.o
+                0x0000000000004022                EPD_CheckBusy
  .text.EPD_Delay
-                0x0000000000003f00       0x2c ./Device/EPD_SPI.o
-                0x0000000000003f00                EPD_Delay
+                0x0000000000004040       0x2c ./Device/EPD_SPI.o
+                0x0000000000004040                EPD_Delay
  .text.ESP8266_Delay
-                0x0000000000003f2c       0x2c ./Device/ESP8266.o
-                0x0000000000003f2c                ESP8266_Delay
+                0x000000000000406c       0x2c ./Device/ESP8266.o
+                0x000000000000406c                ESP8266_Delay
  .text.WIFI_SendCMD
-                0x0000000000003f58       0xc0 ./Device/ESP8266.o
-                0x0000000000003f58                WIFI_SendCMD
+                0x0000000000004098       0xcc ./Device/ESP8266.o
+                0x0000000000004098                WIFI_SendCMD
  .text.WIFI_Init
-                0x0000000000004018      0x160 ./Device/ESP8266.o
-                0x0000000000004018                WIFI_Init
+                0x0000000000004164      0x160 ./Device/ESP8266.o
+                0x0000000000004164                WIFI_Init
  .text.WIFI_SetTxMode
-                0x0000000000004178       0x60 ./Device/ESP8266.o
-                0x0000000000004178                WIFI_SetTxMode
+                0x00000000000042c4       0x60 ./Device/ESP8266.o
+                0x00000000000042c4                WIFI_SetTxMode
  .text.WIFI_LinkSSID
-                0x00000000000041d8       0x3c ./Device/ESP8266.o
-                0x00000000000041d8                WIFI_LinkSSID
+                0x0000000000004324       0x3c ./Device/ESP8266.o
+                0x0000000000004324                WIFI_LinkSSID
  .text.WIFI_CheckIP
-                0x0000000000004214       0x98 ./Device/ESP8266.o
-                0x0000000000004214                WIFI_CheckIP
+                0x0000000000004360       0x98 ./Device/ESP8266.o
+                0x0000000000004360                WIFI_CheckIP
  .text.WIFI_CheckPort
-                0x00000000000042ac       0x38 ./Device/ESP8266.o
-                0x00000000000042ac                WIFI_CheckPort
+                0x00000000000043f8       0x38 ./Device/ESP8266.o
+                0x00000000000043f8                WIFI_CheckPort
  .text.WIFI_TCPConnect
-                0x00000000000042e4       0x6a ./Device/ESP8266.o
-                0x00000000000042e4                WIFI_TCPConnect
+                0x0000000000004430       0x6a ./Device/ESP8266.o
+                0x0000000000004430                WIFI_TCPConnect
  .text.WIFI_CMD_ReturnCheck
-                0x000000000000434e       0x4a ./Device/ESP8266.o
-                0x000000000000434e                WIFI_CMD_ReturnCheck
+                0x000000000000449a       0x4a ./Device/ESP8266.o
+                0x000000000000449a                WIFI_CMD_ReturnCheck
  .text.Paint_NewImage
-                0x0000000000004398       0x4e ./Device/GUI_Paint.o
-                0x0000000000004398                Paint_NewImage
+                0x00000000000044e4       0x4e ./Device/GUI_Paint.o
+                0x00000000000044e4                Paint_NewImage
  .text.Paint_SelectImage
-                0x00000000000043e6        0xa ./Device/GUI_Paint.o
-                0x00000000000043e6                Paint_SelectImage
+                0x0000000000004532        0xa ./Device/GUI_Paint.o
+                0x0000000000004532                Paint_SelectImage
  .text.Paint_SetScale
-                0x00000000000043f0       0x60 ./Device/GUI_Paint.o
-                0x00000000000043f0                Paint_SetScale
+                0x000000000000453c       0x60 ./Device/GUI_Paint.o
+                0x000000000000453c                Paint_SetScale
  .text.Paint_SetPixel
-                0x0000000000004450      0x176 ./Device/GUI_Paint.o
-                0x0000000000004450                Paint_SetPixel
+                0x000000000000459c      0x176 ./Device/GUI_Paint.o
+                0x000000000000459c                Paint_SetPixel
  .text.Paint_Clear
-                0x00000000000045c6       0xce ./Device/GUI_Paint.o
-                0x00000000000045c6                Paint_Clear
+                0x0000000000004712       0xce ./Device/GUI_Paint.o
+                0x0000000000004712                Paint_Clear
  .text.Paint_DrawPoint
-                0x0000000000004694       0xfa ./Device/GUI_Paint.o
-                0x0000000000004694                Paint_DrawPoint
+                0x00000000000047e0       0xfa ./Device/GUI_Paint.o
+                0x00000000000047e0                Paint_DrawPoint
  .text.Paint_DrawLine
-                0x000000000000478e       0xde ./Device/GUI_Paint.o
-                0x000000000000478e                Paint_DrawLine
+                0x00000000000048da       0xde ./Device/GUI_Paint.o
+                0x00000000000048da                Paint_DrawLine
  .text.Paint_DrawRectangle
-                0x000000000000486c       0x90 ./Device/GUI_Paint.o
-                0x000000000000486c                Paint_DrawRectangle
+                0x00000000000049b8       0x90 ./Device/GUI_Paint.o
+                0x00000000000049b8                Paint_DrawRectangle
  .text.Paint_DrawString_CN
-                0x00000000000048fc      0x174 ./Device/GUI_Paint.o
-                0x00000000000048fc                Paint_DrawString_CN
+                0x0000000000004a48      0x174 ./Device/GUI_Paint.o
+                0x0000000000004a48                Paint_DrawString_CN
  .text.Delay_Init
-                0x0000000000004a70       0x2a ./Debug/debug.o
-                0x0000000000004a70                Delay_Init
+                0x0000000000004bbc       0x2a ./Debug/debug.o
+                0x0000000000004bbc                Delay_Init
  .text.USART_Printf_Init
-                0x0000000000004a9a       0x5a ./Debug/debug.o
-                0x0000000000004a9a                USART_Printf_Init
- .text._write   0x0000000000004af4       0x3e ./Debug/debug.o
-                0x0000000000004af4                _write
- .text._sbrk    0x0000000000004b32       0x2a ./Debug/debug.o
-                0x0000000000004b32                _sbrk
+                0x0000000000004be6       0x5a ./Debug/debug.o
+                0x0000000000004be6                USART_Printf_Init
+ .text._write   0x0000000000004c40       0x3e ./Debug/debug.o
+                0x0000000000004c40                _write
+ .text._sbrk    0x0000000000004c7e       0x2a ./Debug/debug.o
+                0x0000000000004c7e                _sbrk
  .text.__get_MEPC
-                0x0000000000004b5c        0x6 ./Core/core_riscv.o
-                0x0000000000004b5c                __get_MEPC
+                0x0000000000004ca8        0x6 ./Core/core_riscv.o
+                0x0000000000004ca8                __get_MEPC
  .text.__get_MCAUSE
-                0x0000000000004b62        0x6 ./Core/core_riscv.o
-                0x0000000000004b62                __get_MCAUSE
+                0x0000000000004cae        0x6 ./Core/core_riscv.o
+                0x0000000000004cae                __get_MCAUSE
  .text.__get_MTVAL
-                0x0000000000004b68        0x6 ./Core/core_riscv.o
-                0x0000000000004b68                __get_MTVAL
+                0x0000000000004cb4        0x6 ./Core/core_riscv.o
+                0x0000000000004cb4                __get_MTVAL
  .text.__clzsi2
-                0x0000000000004b6e       0x6e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
-                0x0000000000004b6e                __clzsi2
+                0x0000000000004cba       0x6e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
+                0x0000000000004cba                __clzsi2
  .text.__udivdi3
-                0x0000000000004bdc      0x392 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_udivdi3.o)
-                0x0000000000004bdc                __udivdi3
+                0x0000000000004d28      0x392 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_udivdi3.o)
+                0x0000000000004d28                __udivdi3
  .text.__umoddi3
-                0x0000000000004f6e      0x38a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_umoddi3.o)
-                0x0000000000004f6e                __umoddi3
- .text.std      0x00000000000052f8       0x66 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x00000000000050ba      0x38a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_umoddi3.o)
+                0x00000000000050ba                __umoddi3
+ .text.std      0x0000000000005444       0x66 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x000000000000535e        0xa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x000000000000535e                _cleanup_r
+                0x00000000000054aa        0xa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x00000000000054aa                _cleanup_r
  .text.__sfmoreglue
-                0x0000000000005368       0x46 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x0000000000005368                __sfmoreglue
- .text.__sinit  0x00000000000053ae       0x6c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x00000000000053ae                __sinit
- .text.__sfp    0x000000000000541a       0xa0 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x000000000000541a                __sfp
+                0x00000000000054b4       0x46 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x00000000000054b4                __sfmoreglue
+ .text.__sinit  0x00000000000054fa       0x6c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x00000000000054fa                __sinit
+ .text.__sfp    0x0000000000005566       0xa0 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x0000000000005566                __sfp
  .text._fwalk_reent
-                0x00000000000054ba       0x6a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fwalk.o)
-                0x00000000000054ba                _fwalk_reent
+                0x0000000000005606       0x6a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fwalk.o)
+                0x0000000000005606                _fwalk_reent
  .text.__swhatbuf_r
-                0x0000000000005524       0x58 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-makebuf.o)
-                0x0000000000005524                __swhatbuf_r
+                0x0000000000005670       0x58 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-makebuf.o)
+                0x0000000000005670                __swhatbuf_r
  .text.__smakebuf_r
-                0x000000000000557c       0x92 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-makebuf.o)
-                0x000000000000557c                __smakebuf_r
- .text.malloc   0x000000000000560e        0xa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-malloc.o)
-                0x000000000000560e                malloc
- .text.free     0x0000000000005618        0xa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-malloc.o)
-                0x0000000000005618                free
- .text.memchr   0x0000000000005622       0x18 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memchr.o)
-                0x0000000000005622                memchr
- .text.memcpy   0x000000000000563a       0xb2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memcpy.o)
-                0x000000000000563a                memcpy
- .text.memmove  0x00000000000056ec       0x46 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memmove.o)
-                0x00000000000056ec                memmove
- .text._free_r  0x0000000000005732       0xa8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-freer.o)
-                0x0000000000005732                _free_r
+                0x00000000000056c8       0x92 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-makebuf.o)
+                0x00000000000056c8                __smakebuf_r
+ .text.malloc   0x000000000000575a        0xa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-malloc.o)
+                0x000000000000575a                malloc
+ .text.free     0x0000000000005764        0xa f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-malloc.o)
+                0x0000000000005764                free
+ .text.memchr   0x000000000000576e       0x18 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memchr.o)
+                0x000000000000576e                memchr
+ .text.memcpy   0x0000000000005786       0xb2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memcpy.o)
+                0x0000000000005786                memcpy
+ .text.memmove  0x0000000000005838       0x46 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memmove.o)
+                0x0000000000005838                memmove
+ .text._free_r  0x000000000000587e       0xa8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-freer.o)
+                0x000000000000587e                _free_r
  .text._malloc_r
-                0x00000000000057da       0xd2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
-                0x00000000000057da                _malloc_r
- .text.printf   0x00000000000058ac       0x42 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-printf.o)
-                0x00000000000058ac                iprintf
-                0x00000000000058ac                printf
- .text._puts_r  0x00000000000058ee       0xd8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-puts.o)
-                0x00000000000058ee                _puts_r
- .text.puts     0x00000000000059c6        0xc f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-puts.o)
-                0x00000000000059c6                puts
- .text._sbrk_r  0x00000000000059d2       0x32 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sbrkr.o)
-                0x00000000000059d2                _sbrk_r
- .text.sprintf  0x0000000000005a04       0x44 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sprintf.o)
-                0x0000000000005a04                siprintf
-                0x0000000000005a04                sprintf
- .text.__sread  0x0000000000005a48       0x2e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
-                0x0000000000005a48                __sread
+                0x0000000000005926       0xd2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+                0x0000000000005926                _malloc_r
+ .text.printf   0x00000000000059f8       0x42 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-printf.o)
+                0x00000000000059f8                iprintf
+                0x00000000000059f8                printf
+ .text._puts_r  0x0000000000005a3a       0xd8 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-puts.o)
+                0x0000000000005a3a                _puts_r
+ .text.puts     0x0000000000005b12        0xc f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-puts.o)
+                0x0000000000005b12                puts
+ .text._sbrk_r  0x0000000000005b1e       0x32 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sbrkr.o)
+                0x0000000000005b1e                _sbrk_r
+ .text.sprintf  0x0000000000005b50       0x44 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sprintf.o)
+                0x0000000000005b50                siprintf
+                0x0000000000005b50                sprintf
+ .text.__sread  0x0000000000005b94       0x2e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
+                0x0000000000005b94                __sread
  .text.__swrite
-                0x0000000000005a76       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
-                0x0000000000005a76                __swrite
- .text.__sseek  0x0000000000005abe       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
-                0x0000000000005abe                __sseek
+                0x0000000000005bc2       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
+                0x0000000000005bc2                __swrite
+ .text.__sseek  0x0000000000005c0a       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
+                0x0000000000005c0a                __sseek
  .text.__sclose
-                0x0000000000005aee        0x6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
-                0x0000000000005aee                __sclose
- .text.strstr   0x0000000000005af4       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-strstr.o)
-                0x0000000000005af4                strstr
+                0x0000000000005c3a        0x6 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
+                0x0000000000005c3a                __sclose
+ .text.strstr   0x0000000000005c40       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-strstr.o)
+                0x0000000000005c40                strstr
  .text.__swbuf_r
-                0x0000000000005b28       0xbe f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wbuf.o)
-                0x0000000000005b28                __swbuf_r
+                0x0000000000005c74       0xbe f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wbuf.o)
+                0x0000000000005c74                __swbuf_r
  .text._write_r
-                0x0000000000005be6       0x36 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-writer.o)
-                0x0000000000005be6                _write_r
+                0x0000000000005d32       0x36 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-writer.o)
+                0x0000000000005d32                _write_r
  .text.__swsetup_r
-                0x0000000000005c1c      0x102 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wsetup.o)
-                0x0000000000005c1c                __swsetup_r
+                0x0000000000005d68      0x102 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wsetup.o)
+                0x0000000000005d68                __swsetup_r
  .text._close_r
-                0x0000000000005d1e       0x32 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-closer.o)
-                0x0000000000005d1e                _close_r
+                0x0000000000005e6a       0x32 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-closer.o)
+                0x0000000000005e6a                _close_r
  .text.__sflush_r
-                0x0000000000005d50      0x132 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fflush.o)
-                0x0000000000005d50                __sflush_r
+                0x0000000000005e9c      0x132 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fflush.o)
+                0x0000000000005e9c                __sflush_r
  .text._fflush_r
-                0x0000000000005e82       0x68 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fflush.o)
-                0x0000000000005e82                _fflush_r
+                0x0000000000005fce       0x68 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fflush.o)
+                0x0000000000005fce                _fflush_r
  .text._fstat_r
-                0x0000000000005eea       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fstatr.o)
-                0x0000000000005eea                _fstat_r
+                0x0000000000006036       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fstatr.o)
+                0x0000000000006036                _fstat_r
  .text._isatty_r
-                0x0000000000005f1e       0x32 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-isattyr.o)
-                0x0000000000005f1e                _isatty_r
+                0x000000000000606a       0x32 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-isattyr.o)
+                0x000000000000606a                _isatty_r
  .text._lseek_r
-                0x0000000000005f50       0x36 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-lseekr.o)
-                0x0000000000005f50                _lseek_r
+                0x000000000000609c       0x36 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-lseekr.o)
+                0x000000000000609c                _lseek_r
  .text.__malloc_lock
-                0x0000000000005f86        0x2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-mlock.o)
-                0x0000000000005f86                __malloc_lock
+                0x00000000000060d2        0x2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-mlock.o)
+                0x00000000000060d2                __malloc_lock
  .text.__malloc_unlock
-                0x0000000000005f88        0x2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-mlock.o)
-                0x0000000000005f88                __malloc_unlock
+                0x00000000000060d4        0x2 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-mlock.o)
+                0x00000000000060d4                __malloc_unlock
  .text._realloc_r
-                0x0000000000005f8a       0x5a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
-                0x0000000000005f8a                _realloc_r
+                0x00000000000060d6       0x5a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+                0x00000000000060d6                _realloc_r
  .text.__ssputs_r
-                0x0000000000005fe4       0xe4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x0000000000005fe4                __ssputs_r
+                0x0000000000006130       0xe4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000000006130                __ssputs_r
  .text._svfprintf_r
-                0x00000000000060c8      0x26a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x00000000000060c8                _svfiprintf_r
-                0x00000000000060c8                _svfprintf_r
+                0x0000000000006214      0x26a f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000000006214                _svfiprintf_r
+                0x0000000000006214                _svfprintf_r
  .text.__sfputc_r
-                0x0000000000006332       0x28 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000000647e       0x28 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x000000000000635a       0x42 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x000000000000635a                __sfputs_r
+                0x00000000000064a6       0x42 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000000064a6                __sfputs_r
  .text._vfprintf_r
-                0x000000000000639c      0x28e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
-                0x000000000000639c                _vfprintf_r
-                0x000000000000639c                _vfiprintf_r
+                0x00000000000064e8      0x28e f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000000064e8                _vfprintf_r
+                0x00000000000064e8                _vfiprintf_r
  .text._printf_common
-                0x000000000000662a      0x10c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000000000000662a                _printf_common
+                0x0000000000006776      0x10c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000006776                _printf_common
  .text._printf_i
-                0x0000000000006736      0x2a4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000000006736                _printf_i
- .text._read_r  0x00000000000069da       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-readr.o)
-                0x00000000000069da                _read_r
+                0x0000000000006882      0x2a4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000006882                _printf_i
+ .text._read_r  0x0000000000006b26       0x34 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-readr.o)
+                0x0000000000006b26                _read_r
  .text._malloc_usable_size_r
-                0x0000000000006a0e       0x14 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-msizer.o)
-                0x0000000000006a0e                _malloc_usable_size_r
- .text._close   0x0000000000006a22       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(close.o)
-                0x0000000000006a22                _close
- .text._fstat   0x0000000000006a32       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(fstat.o)
-                0x0000000000006a32                _fstat
- .text._isatty  0x0000000000006a42       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(isatty.o)
-                0x0000000000006a42                _isatty
- .text._lseek   0x0000000000006a52       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(lseek.o)
-                0x0000000000006a52                _lseek
- .text._read    0x0000000000006a62       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(read.o)
-                0x0000000000006a62                _read
+                0x0000000000006b5a       0x14 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+                0x0000000000006b5a                _malloc_usable_size_r
+ .text._close   0x0000000000006b6e       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(close.o)
+                0x0000000000006b6e                _close
+ .text._fstat   0x0000000000006b7e       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(fstat.o)
+                0x0000000000006b7e                _fstat
+ .text._isatty  0x0000000000006b8e       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(isatty.o)
+                0x0000000000006b8e                _isatty
+ .text._lseek   0x0000000000006b9e       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(lseek.o)
+                0x0000000000006b9e                _lseek
+ .text._read    0x0000000000006bae       0x10 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(read.o)
+                0x0000000000006bae                _read
  *(.rodata)
  *(.rodata*)
- *fill*         0x0000000000006a72        0x2 
+ *fill*         0x0000000000006bbe        0x2 
  .rodata.recDataProcessing
-                0x0000000000006a74       0x1c ./User/ch32v30x_it.o
+                0x0000000000006bc0       0x24 ./User/ch32v30x_it.o
  .rodata.HardFault_Handler.str1.4
-                0x0000000000006a90       0x2c ./User/ch32v30x_it.o
+                0x0000000000006be4       0x2c ./User/ch32v30x_it.o
+ .rodata.recDataProcessing.str1.4
+                0x0000000000006c10      0x12e ./User/ch32v30x_it.o
+ *fill*         0x0000000000006d3e        0x2 
  .rodata.main.str1.4
-                0x0000000000006abc       0x1e ./User/main.o
- *fill*         0x0000000000006ada        0x2 
+                0x0000000000006d40       0x1e ./User/main.o
+ *fill*         0x0000000000006d5e        0x2 
  .rodata.taskSample.str1.4
-                0x0000000000006adc       0x86 ./User/main.o
- *fill*         0x0000000000006b62        0x2 
+                0x0000000000006d60       0x86 ./User/main.o
+ *fill*         0x0000000000006de6        0x2 
  .rodata.Display_First.str1.4
-                0x0000000000006b64       0x13 ./User/thread_Eink.o
- *fill*         0x0000000000006b77        0x1 
+                0x0000000000006de8       0x13 ./User/thread_Eink.o
+ *fill*         0x0000000000006dfb        0x1 
  .rodata.thread_Eink_Start.str1.4
-                0x0000000000006b78       0x5b ./User/thread_Eink.o
- *fill*         0x0000000000006bd3        0x1 
+                0x0000000000006dfc       0x5b ./User/thread_Eink.o
+ *fill*         0x0000000000006e57        0x1 
+ .rodata.ProcessFrame.str1.4
+                0x0000000000006e58       0x1b ./User/thread_WiFi.o
+ *fill*         0x0000000000006e73        0x1 
  .rodata.ProcessImageData.str1.4
-                0x0000000000006bd4       0x69 ./User/thread_WiFi.o
- *fill*         0x0000000000006c3d        0x3 
+                0x0000000000006e74       0x69 ./User/thread_WiFi.o
+ *fill*         0x0000000000006edd        0x3 
  .rodata.thread_WIFI_Start.str1.4
-                0x0000000000006c40       0x95 ./User/thread_WiFi.o
- *fill*         0x0000000000006cd5        0x3 
+                0x0000000000006ee0       0x95 ./User/thread_WiFi.o
+ *fill*         0x0000000000006f75        0x3 
  .rodata.OsLogLevelCheck.str1.4
-                0x0000000000006cd8        0x9 ./LiteOS/utils/los_debug.o
- *fill*         0x0000000000006ce1        0x3 
+                0x0000000000006f78        0x9 ./LiteOS/utils/los_debug.o
+ *fill*         0x0000000000006f81        0x3 
  .rodata.LOS_MemInfoGet.str1.4
-                0x0000000000006ce4       0x48 ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000006f84       0x48 ./LiteOS/kernel/src/mm/los_memory.o
  .rodata.LOS_MemInit.str1.4
-                0x0000000000006d2c       0x60 ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000000006fcc       0x60 ./LiteOS/kernel/src/mm/los_memory.o
  .rodata.OsGetRealPtr.str1.4
-                0x0000000000006d8c       0x1b ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x0000000000006da7        0x1 
+                0x000000000000702c       0x1b ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x0000000000007047        0x1 
  .rodata.OsMemAlloc.str1.4
-                0x0000000000006da8      0x1ff ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x0000000000006fa7        0x1 
+                0x0000000000007048      0x1ff ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x0000000000007247        0x1 
  .rodata.OsMemFree.str1.4
-                0x0000000000006fa8       0x17 ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x0000000000006fbf        0x1 
+                0x0000000000007248       0x17 ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x000000000000725f        0x1 
  .rodata.OsMemFreeNodeAdd.str1.4
-                0x0000000000006fc0       0x2e ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x0000000000006fee        0x2 
+                0x0000000000007260       0x2e ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x000000000000728e        0x2 
  .rodata.OsMemSlGet.str1.4
-                0x0000000000006ff0       0x2d ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x000000000000701d        0x3 
+                0x0000000000007290       0x2d ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x00000000000072bd        0x3 
  .rodata.OsMemSystemInit.str1.4
-                0x0000000000007020       0x2b ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x000000000000704b        0x1 
- .rodata.__FUNCTION__.6873
-                0x000000000000704c        0xb ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x0000000000007057        0x1 
- .rodata.__FUNCTION__.6930
-                0x0000000000007058        0xd ./LiteOS/kernel/src/mm/los_memory.o
- *fill*         0x0000000000007065        0x3 
+                0x00000000000072c0       0x2b ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x00000000000072eb        0x1 
+ .rodata.__FUNCTION__.6871
+                0x00000000000072ec        0xb ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x00000000000072f7        0x1 
+ .rodata.__FUNCTION__.6928
+                0x00000000000072f8        0xd ./LiteOS/kernel/src/mm/los_memory.o
+ *fill*         0x0000000000007305        0x3 
  .rodata.LOS_KernelInit.str1.4
-                0x0000000000007068       0x80 ./LiteOS/kernel/src/los_init.o
+                0x0000000000007308       0x80 ./LiteOS/kernel/src/los_init.o
  .rodata.OsQueueOperate.str1.4
-                0x00000000000070e8       0x43 ./LiteOS/kernel/src/los_queue.o
- *fill*         0x000000000000712b        0x1 
- .rodata.__FUNCTION__.6856
-                0x000000000000712c       0x15 ./LiteOS/kernel/src/los_queue.o
- *fill*         0x0000000000007141        0x3 
+                0x0000000000007388       0x43 ./LiteOS/kernel/src/los_queue.o
+ *fill*         0x00000000000073cb        0x1 
+ .rodata.__FUNCTION__.6854
+                0x00000000000073cc       0x15 ./LiteOS/kernel/src/los_queue.o
+ *fill*         0x00000000000073e1        0x3 
  .rodata.OsSchedStart.str1.4
-                0x0000000000007144       0x13 ./LiteOS/kernel/src/los_sched.o
- *fill*         0x0000000000007157        0x1 
+                0x00000000000073e4       0x13 ./LiteOS/kernel/src/los_sched.o
+ *fill*         0x00000000000073f7        0x1 
  .rodata.OsTimeSliceUpdate.part.1.str1.4
-                0x0000000000007158       0x3e ./LiteOS/kernel/src/los_sched.o
- *fill*         0x0000000000007196        0x2 
- .rodata.__func__.5962
-                0x0000000000007198       0x16 ./LiteOS/kernel/src/los_sched.o
- *fill*         0x00000000000071ae        0x2 
- .rodata.__func__.5972
-                0x00000000000071b0       0x18 ./LiteOS/kernel/src/los_sched.o
- .rodata.__func__.5978
-                0x00000000000071c8       0x12 ./LiteOS/kernel/src/los_sched.o
- *fill*         0x00000000000071da        0x2 
- .rodata.__func__.6029
-                0x00000000000071dc       0x13 ./LiteOS/kernel/src/los_sched.o
- *fill*         0x00000000000071ef        0x1 
- .rodata.__func__.6102
-                0x00000000000071f0       0x15 ./LiteOS/kernel/src/los_sched.o
- *fill*         0x0000000000007205        0x3 
+                0x00000000000073f8       0x3e ./LiteOS/kernel/src/los_sched.o
+ *fill*         0x0000000000007436        0x2 
+ .rodata.__func__.5960
+                0x0000000000007438       0x16 ./LiteOS/kernel/src/los_sched.o
+ *fill*         0x000000000000744e        0x2 
+ .rodata.__func__.5970
+                0x0000000000007450       0x18 ./LiteOS/kernel/src/los_sched.o
+ .rodata.__func__.5976
+                0x0000000000007468       0x12 ./LiteOS/kernel/src/los_sched.o
+ *fill*         0x000000000000747a        0x2 
+ .rodata.__func__.6027
+                0x000000000000747c       0x13 ./LiteOS/kernel/src/los_sched.o
+ *fill*         0x000000000000748f        0x1 
+ .rodata.__func__.6100
+                0x0000000000007490       0x15 ./LiteOS/kernel/src/los_sched.o
+ *fill*         0x00000000000074a5        0x3 
  .rodata.OsAdd2SortLink.str1.4
-                0x0000000000007208       0x1b ./LiteOS/kernel/src/los_sortlink.o
- *fill*         0x0000000000007223        0x1 
+                0x00000000000074a8       0x1b ./LiteOS/kernel/src/los_sortlink.o
+ *fill*         0x00000000000074c3        0x1 
  .rodata.OsGetSortLinkAttribute.str1.4
-                0x0000000000007224       0x18 ./LiteOS/kernel/src/los_sortlink.o
+                0x00000000000074c4       0x18 ./LiteOS/kernel/src/los_sortlink.o
  .rodata.OsSwtmrTask.str1.4
-                0x000000000000723c       0x28 ./LiteOS/kernel/src/los_swtmr.o
+                0x00000000000074dc       0x28 ./LiteOS/kernel/src/los_swtmr.o
  .rodata.OsSwtmrTaskCreate.str1.4
-                0x0000000000007264        0x9 ./LiteOS/kernel/src/los_swtmr.o
- *fill*         0x000000000000726d        0x3 
+                0x0000000000007504        0x9 ./LiteOS/kernel/src/los_swtmr.o
+ *fill*         0x000000000000750d        0x3 
  .rodata.LOS_TaskDelete.str1.4
-                0x0000000000007270       0x37 ./LiteOS/kernel/src/los_task.o
- *fill*         0x00000000000072a7        0x1 
+                0x0000000000007510       0x37 ./LiteOS/kernel/src/los_task.o
+ *fill*         0x0000000000007547        0x1 
  .rodata.OsIdleTaskCreate.str1.4
-                0x00000000000072a8        0xc ./LiteOS/kernel/src/los_task.o
+                0x0000000000007548        0xc ./LiteOS/kernel/src/los_task.o
  .rodata.OsTaskEntry.str1.4
-                0x00000000000072b4       0x1e ./LiteOS/kernel/src/los_task.o
- *fill*         0x00000000000072d2        0x2 
+                0x0000000000007554       0x1e ./LiteOS/kernel/src/los_task.o
+ *fill*         0x0000000000007572        0x2 
  .rodata.OsPmEnter.str1.4
-                0x00000000000072d4       0x24 ./LiteOS/components/power/los_pm.o
+                0x0000000000007574       0x24 ./LiteOS/components/power/los_pm.o
                                          0x3e (size before relaxing)
- .rodata.__func__.6739
-                0x00000000000072f8        0xf ./LiteOS/components/power/los_pm.o
- *fill*         0x0000000000007307        0x1 
+ .rodata.__func__.6737
+                0x0000000000007598        0xf ./LiteOS/components/power/los_pm.o
+ *fill*         0x00000000000075a7        0x1 
  .rodata.Font24CN_Table
-                0x0000000000007308      0x538 ./Fonts/font24CN.o
-                0x0000000000007308                Font24CN_Table
+                0x00000000000075a8      0x538 ./Fonts/font24CN.o
+                0x00000000000075a8                Font24CN_Table
  .rodata.WIFI_CMD_ReturnCheck.str1.4
-                0x0000000000007840       0x11 ./Device/ESP8266.o
- *fill*         0x0000000000007851        0x3 
+                0x0000000000007ae0       0x11 ./Device/ESP8266.o
+ *fill*         0x0000000000007af1        0x3 
  .rodata.WIFI_Init.str1.4
-                0x0000000000007854       0x9e ./Device/ESP8266.o
- *fill*         0x00000000000078f2        0x2 
+                0x0000000000007af4       0x9e ./Device/ESP8266.o
+ *fill*         0x0000000000007b92        0x2 
  .rodata.WIFI_LinkSSID.str1.4
-                0x00000000000078f4       0x1f ./Device/ESP8266.o
- *fill*         0x0000000000007913        0x1 
+                0x0000000000007b94       0x1f ./Device/ESP8266.o
+ *fill*         0x0000000000007bb3        0x1 
  .rodata.WIFI_SendCMD.str1.4
-                0x0000000000007914       0x9a ./Device/ESP8266.o
- *fill*         0x00000000000079ae        0x2 
+                0x0000000000007bb4       0xba ./Device/ESP8266.o
+ *fill*         0x0000000000007c6e        0x2 
  .rodata.WIFI_SetTxMode.str1.4
-                0x00000000000079b0       0x17 ./Device/ESP8266.o
+                0x0000000000007c70       0x17 ./Device/ESP8266.o
                                          0x1d (size before relaxing)
- *fill*         0x00000000000079c7        0x1 
+ *fill*         0x0000000000007c87        0x1 
  .rodata.WIFI_TCPConnect.str1.4
-                0x00000000000079c8       0x3e ./Device/ESP8266.o
- *fill*         0x0000000000007a06        0x2 
+                0x0000000000007c88       0x3e ./Device/ESP8266.o
+ *fill*         0x0000000000007cc6        0x2 
  .rodata.Paint_DrawPoint.str1.4
-                0x0000000000007a08       0x49 ./Device/GUI_Paint.o
- *fill*         0x0000000000007a51        0x3 
+                0x0000000000007cc8       0x49 ./Device/GUI_Paint.o
+ *fill*         0x0000000000007d11        0x3 
  .rodata.__clz_tab
-                0x0000000000007a54      0x100 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clz.o)
-                0x0000000000007a54                __clz_tab
+                0x0000000000007d14      0x100 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clz.o)
+                0x0000000000007d14                __clz_tab
  .rodata.__sf_fake_stderr
-                0x0000000000007b54       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x0000000000007b54                __sf_fake_stderr
+                0x0000000000007e14       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x0000000000007e14                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000000007b74       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x0000000000007b74                __sf_fake_stdin
+                0x0000000000007e34       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x0000000000007e34                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000000007b94       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
-                0x0000000000007b94                __sf_fake_stdout
+                0x0000000000007e54       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+                0x0000000000007e54                __sf_fake_stdout
  .rodata._svfprintf_r.str1.4
-                0x0000000000007bb4       0x13 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0000000000007e74       0x13 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
  .rodata._vfprintf_r.str1.4
-                0x0000000000007bc7       0x13 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
- *fill*         0x0000000000007bc7        0x1 
+                0x0000000000007e87       0x13 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
+ *fill*         0x0000000000007e87        0x1 
  .rodata._printf_i.str1.4
-                0x0000000000007bc8       0x28 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000007e88       0x28 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
                                          0x25 (size before relaxing)
  *(.gnu.linkonce.t.*)
-                0x0000000000007bf0                . = ALIGN (0x4)
+                0x0000000000007eb0                . = ALIGN (0x4)
 
-.rela.dyn       0x0000000000007bf0        0x0
- .rela.init     0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
- .rela.vector   0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+.rela.dyn       0x0000000000007eb0        0x0
+ .rela.init     0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
+ .rela.vector   0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text.handle_reset
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text.OsSchedUpdateSchedTimeBase
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text.OsGetCurrSchedTimeCycle
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text.OsSchedSetNextExpireTime
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text.HalStartSchedule
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
- .rela.text     0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
+ .rela.text     0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._sbrk
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
- .rela.sdata.curbrk.5275
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
+ .rela.sdata.curbrk.5273
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._sbrk_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._write_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._close_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._fstat_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._isatty_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._lseek_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._svfprintf_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._vfprintf_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._read_r
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._close
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._fstat
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._isatty
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._lseek
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
  .rela.text._read
-                0x0000000000007bf0        0x0 ./User/ch32v30x_it.o
+                0x0000000000007eb0        0x0 ./User/ch32v30x_it.o
 
-.fini           0x0000000000007bf0        0x0
+.fini           0x0000000000007eb0        0x0
  *(SORT_NONE(.fini))
-                0x0000000000007bf0                . = ALIGN (0x4)
+                0x0000000000007eb0                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (_eitcm = .)
 
-.preinit_array  0x0000000000007bf0        0x0
+.preinit_array  0x0000000000007eb0        0x0
                 [!provide]                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000000007bf0        0x0
+.init_array     0x0000000000007eb0        0x0
                 [!provide]                        PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
                 [!provide]                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000000007bf0        0x0
+.fini_array     0x0000000000007eb0        0x0
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
@@ -4733,15 +4775,15 @@ END GROUP
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
 
-.dalign         0x0000000020000000        0x0 load address 0x0000000000007bf0
+.dalign         0x0000000020000000        0x0 load address 0x0000000000007eb0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                PROVIDE (_data_vma = .)
 
-.dlalign        0x0000000000007bf0        0x0
-                0x0000000000007bf0                . = ALIGN (0x4)
-                0x0000000000007bf0                PROVIDE (_data_lma = .)
+.dlalign        0x0000000000007eb0        0x0
+                0x0000000000007eb0                . = ALIGN (0x4)
+                0x0000000000007eb0                PROVIDE (_data_lma = .)
 
-.data           0x0000000020000000       0xd0 load address 0x0000000000007bf0
+.data           0x0000000020000000       0xd0 load address 0x0000000000007eb0
  *(.gnu.linkonce.r.*)
  *(.data .data.*)
  .data.AHBPrescTable
@@ -4770,7 +4812,7 @@ END GROUP
                 0x00000000200000b4        0x4 ./Peripheral/src/ch32v30x_rcc.o
  .sdata.g_schedResponseTime
                 0x00000000200000b8        0x8 ./LiteOS/kernel/src/los_sched.o
- .sdata.curbrk.5275
+ .sdata.curbrk.5273
                 0x00000000200000c0        0x4 ./Debug/debug.o
  .sdata._impure_ptr
                 0x00000000200000c4        0x4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-impure.o)
@@ -4791,47 +4833,49 @@ END GROUP
                 0x00000000200000d0                . = ALIGN (0x4)
                 0x00000000200000d0                PROVIDE (_edata = .)
 
-.bss            0x00000000200000d0     0x86dc load address 0x0000000000007cc0
+.bss            0x00000000200000d0     0x86d4 load address 0x0000000000007f80
                 0x00000000200000d0                . = ALIGN (0x4)
                 0x00000000200000d0                PROVIDE (_sbss = .)
  *(.sbss*)
- .sbss.cmd_index.5611
+ .sbss.cmd_index.5620
                 0x00000000200000d0        0x2 ./User/ch32v30x_it.o
- *fill*         0x00000000200000d2        0x2 
+ .sbss.data_index.5629
+                0x00000000200000d2        0x2 ./User/ch32v30x_it.o
+ .sbss.recState.5630
+                0x00000000200000d4        0x4 ./User/ch32v30x_it.o
  .sbss.NVIC_Priority_Group
-                0x00000000200000d4        0x4 ./Peripheral/src/ch32v30x_misc.o
-                0x00000000200000d4                NVIC_Priority_Group
+                0x00000000200000d8        0x4 ./Peripheral/src/ch32v30x_misc.o
+                0x00000000200000d8                NVIC_Priority_Group
  .sbss.g_excHook
-                0x00000000200000d8        0x4 ./LiteOS/utils/los_debug.o
+                0x00000000200000dc        0x4 ./LiteOS/utils/los_debug.o
  .sbss.m_aucSysMem0
-                0x00000000200000dc        0x4 ./LiteOS/kernel/src/mm/los_memory.o
-                0x00000000200000dc                m_aucSysMem0
+                0x00000000200000e0        0x4 ./LiteOS/kernel/src/mm/los_memory.o
+                0x00000000200000e0                m_aucSysMem0
  .sbss.g_allMux
-                0x00000000200000e0        0x4 ./LiteOS/kernel/src/los_mux.o
-                0x00000000200000e0                g_allMux
+                0x00000000200000e4        0x4 ./LiteOS/kernel/src/los_mux.o
+                0x00000000200000e4                g_allMux
  .sbss.g_unusedMuxList
-                0x00000000200000e4        0x8 ./LiteOS/kernel/src/los_mux.o
-                0x00000000200000e4                g_unusedMuxList
+                0x00000000200000e8        0x8 ./LiteOS/kernel/src/los_mux.o
+                0x00000000200000e8                g_unusedMuxList
  .sbss.g_allQueue
-                0x00000000200000ec        0x4 ./LiteOS/kernel/src/los_queue.o
-                0x00000000200000ec                g_allQueue
+                0x00000000200000f0        0x4 ./LiteOS/kernel/src/los_queue.o
+                0x00000000200000f0                g_allQueue
  .sbss.g_freeQueueList
-                0x00000000200000f0        0x8 ./LiteOS/kernel/src/los_queue.o
-                0x00000000200000f0                g_freeQueueList
+                0x00000000200000f4        0x8 ./LiteOS/kernel/src/los_queue.o
+                0x00000000200000f4                g_freeQueueList
  .sbss.SchedRealSleepTimeSet
-                0x00000000200000f8        0x4 ./LiteOS/kernel/src/los_sched.o
- .sbss.g_queueBitmap
                 0x00000000200000fc        0x4 ./LiteOS/kernel/src/los_sched.o
- .sbss.g_schedResponseID
+ .sbss.g_queueBitmap
                 0x0000000020000100        0x4 ./LiteOS/kernel/src/los_sched.o
- *fill*         0x0000000020000104        0x4 
+ .sbss.g_schedResponseID
+                0x0000000020000104        0x4 ./LiteOS/kernel/src/los_sched.o
  .sbss.g_schedTimerBase
                 0x0000000020000108        0x8 ./LiteOS/kernel/src/los_sched.o
  .sbss.g_swtmrScan
                 0x0000000020000110        0x4 ./LiteOS/kernel/src/los_sched.o
  .sbss.g_taskSortLinkList
                 0x0000000020000114        0x4 ./LiteOS/kernel/src/los_sched.o
- .sbss.oldSchedTime.5967
+ .sbss.oldSchedTime.5965
                 0x0000000020000118        0x8 ./LiteOS/kernel/src/los_sched.o
  .sbss.g_allSem
                 0x0000000020000120        0x4 ./LiteOS/kernel/src/los_sem.o
@@ -4931,29 +4975,29 @@ END GROUP
  .bss.WIFI_CMD  0x00000000200001b0       0x80 ./User/ch32v30x_it.o
                 0x00000000200001b0                WIFI_CMD
  .bss.g_frame_data
-                0x0000000020000230      0x410 ./User/ch32v30x_it.o
+                0x0000000020000230      0x408 ./User/ch32v30x_it.o
                 0x0000000020000230                g_frame_data
  .bss.gWifiEventGroup
-                0x0000000020000640        0xc ./User/main.o
-                0x0000000020000640                gWifiEventGroup
+                0x0000000020000638        0xc ./User/main.o
+                0x0000000020000638                gWifiEventGroup
  .bss.g_memStart
-                0x000000002000064c     0x8000 ./LiteOS/kernel/src/mm/los_memory.o
+                0x0000000020000644     0x8000 ./LiteOS/kernel/src/mm/los_memory.o
  .bss.g_priQueueList
-                0x000000002000864c      0x100 ./LiteOS/kernel/src/los_sched.o
+                0x0000000020008644      0x100 ./LiteOS/kernel/src/los_sched.o
  .bss.g_swtmrAlignID
-                0x000000002000874c       0x18 ./LiteOS/kernel/src/los_swtmr.o
-                0x000000002000874c                g_swtmrAlignID
- *fill*         0x0000000020008764        0x4 
- .bss.g_pmCB    0x0000000020008768       0x28 ./LiteOS/components/power/los_pm.o
- .bss.Paint     0x0000000020008790       0x18 ./Device/GUI_Paint.o
-                0x0000000020008790                Paint
+                0x0000000020008744       0x18 ./LiteOS/kernel/src/los_swtmr.o
+                0x0000000020008744                g_swtmrAlignID
+ *fill*         0x000000002000875c        0x4 
+ .bss.g_pmCB    0x0000000020008760       0x28 ./LiteOS/components/power/los_pm.o
+ .bss.Paint     0x0000000020008788       0x18 ./Device/GUI_Paint.o
+                0x0000000020008788                Paint
  *(.gnu.linkonce.b.*)
  *(COMMON*)
- COMMON         0x00000000200087a8        0x4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-reent.o)
-                0x00000000200087a8                errno
-                0x00000000200087ac                . = ALIGN (0x4)
-                0x00000000200087ac                PROVIDE (_ebss = .)
-                0x00000000200087ac                PROVIDE (_end = _ebss)
+ COMMON         0x00000000200087a0        0x4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-reent.o)
+                0x00000000200087a0                errno
+                0x00000000200087a4                . = ALIGN (0x4)
+                0x00000000200087a4                PROVIDE (_ebss = .)
+                0x00000000200087a4                PROVIDE (_end = _ebss)
                 [!provide]                        PROVIDE (end = .)
 
 .stack          0x000000002000f800      0x800
@@ -4965,121 +5009,121 @@ END GROUP
                 0x0000000020010000                PROVIDE (_eusrstack = .)
 OUTPUT(WCH-CH32V307VCT6-Eink-LiteOS.elf elf32-littleriscv)
 
-.debug_info     0x0000000000000000    0x3042e
- .debug_info    0x0000000000000000      0xeaa ./User/ch32v30x_it.o
- .debug_info    0x0000000000000eaa     0x110a ./User/main.o
- .debug_info    0x0000000000001fb4      0xbb5 ./User/system_ch32v30x.o
- .debug_info    0x0000000000002b69     0x1821 ./User/thread_Eink.o
- .debug_info    0x000000000000438a     0x11e0 ./User/thread_WiFi.o
- .debug_info    0x000000000000556a      0xb7c ./User/user_usart.o
- .debug_info    0x00000000000060e6       0x22 ./Startup/startup_ch32v30x_D8C.o
- .debug_info    0x0000000000006108      0xa94 ./Peripheral/src/ch32v30x_dbgmcu.o
- .debug_info    0x0000000000006b9c     0x12aa ./Peripheral/src/ch32v30x_gpio.o
- .debug_info    0x0000000000007e46      0xf5b ./Peripheral/src/ch32v30x_misc.o
- .debug_info    0x0000000000008da1     0x158a ./Peripheral/src/ch32v30x_rcc.o
- .debug_info    0x000000000000a32b     0x13cd ./Peripheral/src/ch32v30x_usart.o
- .debug_info    0x000000000000b6f8      0xc91 ./LiteOS/utils/los_debug.o
- .debug_info    0x000000000000c389     0x19a7 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
- .debug_info    0x000000000000dd30     0x156a ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
- .debug_info    0x000000000000f29a     0x3839 ./LiteOS/kernel/src/mm/los_memory.o
- .debug_info    0x0000000000012ad3     0x143c ./LiteOS/kernel/src/los_event.o
- .debug_info    0x0000000000013f0f     0x126e ./LiteOS/kernel/src/los_init.o
- .debug_info    0x000000000001517d     0x1696 ./LiteOS/kernel/src/los_mux.o
- .debug_info    0x0000000000016813     0x2343 ./LiteOS/kernel/src/los_queue.o
- .debug_info    0x0000000000018b56     0x215a ./LiteOS/kernel/src/los_sched.o
- .debug_info    0x000000000001acb0     0x1807 ./LiteOS/kernel/src/los_sem.o
- .debug_info    0x000000000001c4b7     0x1438 ./LiteOS/kernel/src/los_sortlink.o
- .debug_info    0x000000000001d8ef     0x1ef0 ./LiteOS/kernel/src/los_swtmr.o
- .debug_info    0x000000000001f7df     0x2846 ./LiteOS/kernel/src/los_task.o
- .debug_info    0x0000000000022025     0x10f9 ./LiteOS/kernel/src/los_tick.o
- .debug_info    0x000000000002311e     0x14ea ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
- .debug_info    0x0000000000024608       0x22 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
- .debug_info    0x000000000002462a     0x1740 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
- .debug_info    0x0000000000025d6a     0x1424 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
- .debug_info    0x000000000002718e     0x1de5 ./LiteOS/components/power/los_pm.o
- .debug_info    0x0000000000028f73      0x248 ./Fonts/font24CN.o
- .debug_info    0x00000000000291bb      0xee0 ./Device/EPD.o
- .debug_info    0x000000000002a09b     0x1103 ./Device/EPD_SPI.o
- .debug_info    0x000000000002b19e     0x19b0 ./Device/ESP8266.o
- .debug_info    0x000000000002cb4e     0x2529 ./Device/GUI_Paint.o
- .debug_info    0x000000000002f077      0xf4a ./Debug/debug.o
- .debug_info    0x000000000002ffc1      0x46d ./Core/core_riscv.o
+.debug_info     0x0000000000000000    0x3050e
+ .debug_info    0x0000000000000000     0x1060 ./User/ch32v30x_it.o
+ .debug_info    0x0000000000001060     0x10b9 ./User/main.o
+ .debug_info    0x0000000000002119      0xbb5 ./User/system_ch32v30x.o
+ .debug_info    0x0000000000002cce     0x17d0 ./User/thread_Eink.o
+ .debug_info    0x000000000000449e     0x1195 ./User/thread_WiFi.o
+ .debug_info    0x0000000000005633      0xb7c ./User/user_usart.o
+ .debug_info    0x00000000000061af       0x22 ./Startup/startup_ch32v30x_D8C.o
+ .debug_info    0x00000000000061d1      0xa94 ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_info    0x0000000000006c65     0x12aa ./Peripheral/src/ch32v30x_gpio.o
+ .debug_info    0x0000000000007f0f      0xf5b ./Peripheral/src/ch32v30x_misc.o
+ .debug_info    0x0000000000008e6a     0x158a ./Peripheral/src/ch32v30x_rcc.o
+ .debug_info    0x000000000000a3f4     0x13cd ./Peripheral/src/ch32v30x_usart.o
+ .debug_info    0x000000000000b7c1      0xc91 ./LiteOS/utils/los_debug.o
+ .debug_info    0x000000000000c452     0x19a7 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_info    0x000000000000ddf9     0x156a ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_info    0x000000000000f363     0x3839 ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_info    0x0000000000012b9c     0x143c ./LiteOS/kernel/src/los_event.o
+ .debug_info    0x0000000000013fd8     0x126e ./LiteOS/kernel/src/los_init.o
+ .debug_info    0x0000000000015246     0x1696 ./LiteOS/kernel/src/los_mux.o
+ .debug_info    0x00000000000168dc     0x2343 ./LiteOS/kernel/src/los_queue.o
+ .debug_info    0x0000000000018c1f     0x215a ./LiteOS/kernel/src/los_sched.o
+ .debug_info    0x000000000001ad79     0x1807 ./LiteOS/kernel/src/los_sem.o
+ .debug_info    0x000000000001c580     0x1438 ./LiteOS/kernel/src/los_sortlink.o
+ .debug_info    0x000000000001d9b8     0x1ef0 ./LiteOS/kernel/src/los_swtmr.o
+ .debug_info    0x000000000001f8a8     0x2846 ./LiteOS/kernel/src/los_task.o
+ .debug_info    0x00000000000220ee     0x10f9 ./LiteOS/kernel/src/los_tick.o
+ .debug_info    0x00000000000231e7     0x14ea ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_info    0x00000000000246d1       0x22 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
+ .debug_info    0x00000000000246f3     0x1740 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_info    0x0000000000025e33     0x1424 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_info    0x0000000000027257     0x1de5 ./LiteOS/components/power/los_pm.o
+ .debug_info    0x000000000002903c      0x248 ./Fonts/font24CN.o
+ .debug_info    0x0000000000029284      0xee0 ./Device/EPD.o
+ .debug_info    0x000000000002a164     0x1103 ./Device/EPD_SPI.o
+ .debug_info    0x000000000002b267     0x19c7 ./Device/ESP8266.o
+ .debug_info    0x000000000002cc2e     0x2529 ./Device/GUI_Paint.o
+ .debug_info    0x000000000002f157      0xf4a ./Debug/debug.o
+ .debug_info    0x00000000000300a1      0x46d ./Core/core_riscv.o
 
-.debug_abbrev   0x0000000000000000     0x79c9
- .debug_abbrev  0x0000000000000000      0x2e0 ./User/ch32v30x_it.o
- .debug_abbrev  0x00000000000002e0      0x2e9 ./User/main.o
- .debug_abbrev  0x00000000000005c9      0x2c0 ./User/system_ch32v30x.o
- .debug_abbrev  0x0000000000000889      0x34d ./User/thread_Eink.o
- .debug_abbrev  0x0000000000000bd6      0x329 ./User/thread_WiFi.o
- .debug_abbrev  0x0000000000000eff      0x256 ./User/user_usart.o
- .debug_abbrev  0x0000000000001155       0x12 ./Startup/startup_ch32v30x_D8C.o
- .debug_abbrev  0x0000000000001167      0x2f7 ./Peripheral/src/ch32v30x_dbgmcu.o
- .debug_abbrev  0x000000000000145e      0x31a ./Peripheral/src/ch32v30x_gpio.o
- .debug_abbrev  0x0000000000001778      0x2da ./Peripheral/src/ch32v30x_misc.o
- .debug_abbrev  0x0000000000001a52      0x351 ./Peripheral/src/ch32v30x_rcc.o
- .debug_abbrev  0x0000000000001da3      0x312 ./Peripheral/src/ch32v30x_usart.o
- .debug_abbrev  0x00000000000020b5      0x2fd ./LiteOS/utils/los_debug.o
- .debug_abbrev  0x00000000000023b2      0x2c7 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
- .debug_abbrev  0x0000000000002679      0x34a ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
- .debug_abbrev  0x00000000000029c3      0x560 ./LiteOS/kernel/src/mm/los_memory.o
- .debug_abbrev  0x0000000000002f23      0x2f5 ./LiteOS/kernel/src/los_event.o
- .debug_abbrev  0x0000000000003218      0x2d7 ./LiteOS/kernel/src/los_init.o
- .debug_abbrev  0x00000000000034ef      0x3a0 ./LiteOS/kernel/src/los_mux.o
- .debug_abbrev  0x000000000000388f      0x482 ./LiteOS/kernel/src/los_queue.o
- .debug_abbrev  0x0000000000003d11      0x566 ./LiteOS/kernel/src/los_sched.o
- .debug_abbrev  0x0000000000004277      0x3a2 ./LiteOS/kernel/src/los_sem.o
- .debug_abbrev  0x0000000000004619      0x3dc ./LiteOS/kernel/src/los_sortlink.o
- .debug_abbrev  0x00000000000049f5      0x53b ./LiteOS/kernel/src/los_swtmr.o
- .debug_abbrev  0x0000000000004f30      0x57b ./LiteOS/kernel/src/los_task.o
- .debug_abbrev  0x00000000000054ab      0x2a7 ./LiteOS/kernel/src/los_tick.o
- .debug_abbrev  0x0000000000005752      0x302 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
- .debug_abbrev  0x0000000000005a54       0x12 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
- .debug_abbrev  0x0000000000005a66      0x3b2 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
- .debug_abbrev  0x0000000000005e18      0x379 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
- .debug_abbrev  0x0000000000006191      0x50a ./LiteOS/components/power/los_pm.o
- .debug_abbrev  0x000000000000669b       0xc2 ./Fonts/font24CN.o
- .debug_abbrev  0x000000000000675d      0x2c8 ./Device/EPD.o
- .debug_abbrev  0x0000000000006a25      0x2b6 ./Device/EPD_SPI.o
- .debug_abbrev  0x0000000000006cdb      0x4a8 ./Device/ESP8266.o
- .debug_abbrev  0x0000000000007183      0x444 ./Device/GUI_Paint.o
- .debug_abbrev  0x00000000000075c7      0x2f5 ./Debug/debug.o
- .debug_abbrev  0x00000000000078bc      0x10d ./Core/core_riscv.o
+.debug_abbrev   0x0000000000000000     0x79b5
+ .debug_abbrev  0x0000000000000000      0x30d ./User/ch32v30x_it.o
+ .debug_abbrev  0x000000000000030d      0x2cd ./User/main.o
+ .debug_abbrev  0x00000000000005da      0x2c0 ./User/system_ch32v30x.o
+ .debug_abbrev  0x000000000000089a      0x34d ./User/thread_Eink.o
+ .debug_abbrev  0x0000000000000be7      0x304 ./User/thread_WiFi.o
+ .debug_abbrev  0x0000000000000eeb      0x256 ./User/user_usart.o
+ .debug_abbrev  0x0000000000001141       0x12 ./Startup/startup_ch32v30x_D8C.o
+ .debug_abbrev  0x0000000000001153      0x2f7 ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_abbrev  0x000000000000144a      0x31a ./Peripheral/src/ch32v30x_gpio.o
+ .debug_abbrev  0x0000000000001764      0x2da ./Peripheral/src/ch32v30x_misc.o
+ .debug_abbrev  0x0000000000001a3e      0x351 ./Peripheral/src/ch32v30x_rcc.o
+ .debug_abbrev  0x0000000000001d8f      0x312 ./Peripheral/src/ch32v30x_usart.o
+ .debug_abbrev  0x00000000000020a1      0x2fd ./LiteOS/utils/los_debug.o
+ .debug_abbrev  0x000000000000239e      0x2c7 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_abbrev  0x0000000000002665      0x34a ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_abbrev  0x00000000000029af      0x560 ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_abbrev  0x0000000000002f0f      0x2f5 ./LiteOS/kernel/src/los_event.o
+ .debug_abbrev  0x0000000000003204      0x2d7 ./LiteOS/kernel/src/los_init.o
+ .debug_abbrev  0x00000000000034db      0x3a0 ./LiteOS/kernel/src/los_mux.o
+ .debug_abbrev  0x000000000000387b      0x482 ./LiteOS/kernel/src/los_queue.o
+ .debug_abbrev  0x0000000000003cfd      0x566 ./LiteOS/kernel/src/los_sched.o
+ .debug_abbrev  0x0000000000004263      0x3a2 ./LiteOS/kernel/src/los_sem.o
+ .debug_abbrev  0x0000000000004605      0x3dc ./LiteOS/kernel/src/los_sortlink.o
+ .debug_abbrev  0x00000000000049e1      0x53b ./LiteOS/kernel/src/los_swtmr.o
+ .debug_abbrev  0x0000000000004f1c      0x57b ./LiteOS/kernel/src/los_task.o
+ .debug_abbrev  0x0000000000005497      0x2a7 ./LiteOS/kernel/src/los_tick.o
+ .debug_abbrev  0x000000000000573e      0x302 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_abbrev  0x0000000000005a40       0x12 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
+ .debug_abbrev  0x0000000000005a52      0x3b2 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_abbrev  0x0000000000005e04      0x379 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_abbrev  0x000000000000617d      0x50a ./LiteOS/components/power/los_pm.o
+ .debug_abbrev  0x0000000000006687       0xc2 ./Fonts/font24CN.o
+ .debug_abbrev  0x0000000000006749      0x2c8 ./Device/EPD.o
+ .debug_abbrev  0x0000000000006a11      0x2b6 ./Device/EPD_SPI.o
+ .debug_abbrev  0x0000000000006cc7      0x4a8 ./Device/ESP8266.o
+ .debug_abbrev  0x000000000000716f      0x444 ./Device/GUI_Paint.o
+ .debug_abbrev  0x00000000000075b3      0x2f5 ./Debug/debug.o
+ .debug_abbrev  0x00000000000078a8      0x10d ./Core/core_riscv.o
 
-.debug_loc      0x0000000000000000    0x10461
- .debug_loc     0x0000000000000000       0xb7 ./User/ch32v30x_it.o
- .debug_loc     0x00000000000000b7       0x1e ./User/main.o
- .debug_loc     0x00000000000000d5      0x163 ./User/system_ch32v30x.o
- .debug_loc     0x0000000000000238       0xd9 ./User/thread_Eink.o
- .debug_loc     0x0000000000000311      0x1a7 ./User/thread_WiFi.o
- .debug_loc     0x00000000000004b8       0x9b ./User/user_usart.o
- .debug_loc     0x0000000000000553       0x7c ./Peripheral/src/ch32v30x_dbgmcu.o
- .debug_loc     0x00000000000005cf      0x72b ./Peripheral/src/ch32v30x_gpio.o
- .debug_loc     0x0000000000000cfa       0x61 ./Peripheral/src/ch32v30x_misc.o
- .debug_loc     0x0000000000000d5b      0xadb ./Peripheral/src/ch32v30x_rcc.o
- .debug_loc     0x0000000000001836      0x779 ./Peripheral/src/ch32v30x_usart.o
- .debug_loc     0x0000000000001faf      0x17b ./LiteOS/utils/los_debug.o
- .debug_loc     0x000000000000212a     0x1eb9 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
- .debug_loc     0x0000000000003fe3      0x707 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
- .debug_loc     0x00000000000046ea     0x21f8 ./LiteOS/kernel/src/mm/los_memory.o
- .debug_loc     0x00000000000068e2      0x618 ./LiteOS/kernel/src/los_event.o
- .debug_loc     0x0000000000006efa       0x1e ./LiteOS/kernel/src/los_init.o
- .debug_loc     0x0000000000006f18      0x531 ./LiteOS/kernel/src/los_mux.o
- .debug_loc     0x0000000000007449     0x1fc3 ./LiteOS/kernel/src/los_queue.o
- .debug_loc     0x000000000000940c      0xa8b ./LiteOS/kernel/src/los_sched.o
- .debug_loc     0x0000000000009e97      0x71d ./LiteOS/kernel/src/los_sem.o
- .debug_loc     0x000000000000a5b4      0x6e4 ./LiteOS/kernel/src/los_sortlink.o
- .debug_loc     0x000000000000ac98     0x1010 ./LiteOS/kernel/src/los_swtmr.o
- .debug_loc     0x000000000000bca8     0x113b ./LiteOS/kernel/src/los_task.o
- .debug_loc     0x000000000000cde3      0x2bf ./LiteOS/kernel/src/los_tick.o
- .debug_loc     0x000000000000d0a2      0x104 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
- .debug_loc     0x000000000000d1a6      0x1de ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
- .debug_loc     0x000000000000d384       0xe0 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
- .debug_loc     0x000000000000d464      0x912 ./LiteOS/components/power/los_pm.o
- .debug_loc     0x000000000000dd76      0x590 ./Device/EPD.o
- .debug_loc     0x000000000000e306       0xc8 ./Device/EPD_SPI.o
- .debug_loc     0x000000000000e3ce      0x44c ./Device/ESP8266.o
- .debug_loc     0x000000000000e81a     0x1ad0 ./Device/GUI_Paint.o
- .debug_loc     0x00000000000102ea      0x177 ./Debug/debug.o
+.debug_loc      0x0000000000000000    0x1063f
+ .debug_loc     0x0000000000000000      0x292 ./User/ch32v30x_it.o
+ .debug_loc     0x0000000000000292       0x1e ./User/main.o
+ .debug_loc     0x00000000000002b0      0x163 ./User/system_ch32v30x.o
+ .debug_loc     0x0000000000000413       0xd9 ./User/thread_Eink.o
+ .debug_loc     0x00000000000004ec      0x1b5 ./User/thread_WiFi.o
+ .debug_loc     0x00000000000006a1       0x9b ./User/user_usart.o
+ .debug_loc     0x000000000000073c       0x6e ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_loc     0x00000000000007aa      0x72b ./Peripheral/src/ch32v30x_gpio.o
+ .debug_loc     0x0000000000000ed5       0x61 ./Peripheral/src/ch32v30x_misc.o
+ .debug_loc     0x0000000000000f36      0xadb ./Peripheral/src/ch32v30x_rcc.o
+ .debug_loc     0x0000000000001a11      0x779 ./Peripheral/src/ch32v30x_usart.o
+ .debug_loc     0x000000000000218a      0x17b ./LiteOS/utils/los_debug.o
+ .debug_loc     0x0000000000002305     0x1eb9 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_loc     0x00000000000041be      0x707 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_loc     0x00000000000048c5     0x21f8 ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_loc     0x0000000000006abd      0x618 ./LiteOS/kernel/src/los_event.o
+ .debug_loc     0x00000000000070d5       0x1e ./LiteOS/kernel/src/los_init.o
+ .debug_loc     0x00000000000070f3      0x531 ./LiteOS/kernel/src/los_mux.o
+ .debug_loc     0x0000000000007624     0x1fc3 ./LiteOS/kernel/src/los_queue.o
+ .debug_loc     0x00000000000095e7      0xa8b ./LiteOS/kernel/src/los_sched.o
+ .debug_loc     0x000000000000a072      0x71d ./LiteOS/kernel/src/los_sem.o
+ .debug_loc     0x000000000000a78f      0x6e4 ./LiteOS/kernel/src/los_sortlink.o
+ .debug_loc     0x000000000000ae73     0x1010 ./LiteOS/kernel/src/los_swtmr.o
+ .debug_loc     0x000000000000be83     0x113b ./LiteOS/kernel/src/los_task.o
+ .debug_loc     0x000000000000cfbe      0x2bf ./LiteOS/kernel/src/los_tick.o
+ .debug_loc     0x000000000000d27d      0x104 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_loc     0x000000000000d381      0x1de ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_loc     0x000000000000d55f       0xe0 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_loc     0x000000000000d63f      0x912 ./LiteOS/components/power/los_pm.o
+ .debug_loc     0x000000000000df51      0x590 ./Device/EPD.o
+ .debug_loc     0x000000000000e4e1       0xc8 ./Device/EPD_SPI.o
+ .debug_loc     0x000000000000e5a9      0x44f ./Device/ESP8266.o
+ .debug_loc     0x000000000000e9f8     0x1ad0 ./Device/GUI_Paint.o
+ .debug_loc     0x00000000000104c8      0x177 ./Debug/debug.o
 
 .debug_aranges  0x0000000000000000     0x1028
  .debug_aranges
@@ -5159,161 +5203,161 @@ OUTPUT(WCH-CH32V307VCT6-Eink-LiteOS.elf elf32-littleriscv)
  .debug_aranges
                 0x0000000000000f48       0xe0 ./Core/core_riscv.o
 
-.debug_ranges   0x0000000000000000     0x1930
- .debug_ranges  0x0000000000000000       0x48 ./User/ch32v30x_it.o
- .debug_ranges  0x0000000000000048       0x18 ./User/main.o
- .debug_ranges  0x0000000000000060       0x38 ./User/system_ch32v30x.o
- .debug_ranges  0x0000000000000098       0x28 ./User/thread_Eink.o
- .debug_ranges  0x00000000000000c0       0x38 ./User/thread_WiFi.o
- .debug_ranges  0x00000000000000f8       0x18 ./User/user_usart.o
- .debug_ranges  0x0000000000000110       0x28 ./Startup/startup_ch32v30x_D8C.o
- .debug_ranges  0x0000000000000138       0x50 ./Peripheral/src/ch32v30x_dbgmcu.o
- .debug_ranges  0x0000000000000188       0xa0 ./Peripheral/src/ch32v30x_gpio.o
- .debug_ranges  0x0000000000000228       0x30 ./Peripheral/src/ch32v30x_misc.o
- .debug_ranges  0x0000000000000258      0x198 ./Peripheral/src/ch32v30x_rcc.o
- .debug_ranges  0x00000000000003f0       0xe0 ./Peripheral/src/ch32v30x_usart.o
- .debug_ranges  0x00000000000004d0       0x30 ./LiteOS/utils/los_debug.o
- .debug_ranges  0x0000000000000500       0x28 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
- .debug_ranges  0x0000000000000528       0xa0 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
- .debug_ranges  0x00000000000005c8      0x2b0 ./LiteOS/kernel/src/mm/los_memory.o
- .debug_ranges  0x0000000000000878       0x68 ./LiteOS/kernel/src/los_event.o
- .debug_ranges  0x00000000000008e0       0x28 ./LiteOS/kernel/src/los_init.o
- .debug_ranges  0x0000000000000908       0x70 ./LiteOS/kernel/src/los_mux.o
- .debug_ranges  0x0000000000000978      0x1d0 ./LiteOS/kernel/src/los_queue.o
- .debug_ranges  0x0000000000000b48      0x1f8 ./LiteOS/kernel/src/los_sched.o
- .debug_ranges  0x0000000000000d40       0x98 ./LiteOS/kernel/src/los_sem.o
- .debug_ranges  0x0000000000000dd8       0xd0 ./LiteOS/kernel/src/los_sortlink.o
- .debug_ranges  0x0000000000000ea8      0x108 ./LiteOS/kernel/src/los_swtmr.o
- .debug_ranges  0x0000000000000fb0      0x2b8 ./LiteOS/kernel/src/los_task.o
- .debug_ranges  0x0000000000001268       0x48 ./LiteOS/kernel/src/los_tick.o
- .debug_ranges  0x00000000000012b0       0x38 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
- .debug_ranges  0x00000000000012e8       0x20 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
- .debug_ranges  0x0000000000001308       0x68 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
- .debug_ranges  0x0000000000001370       0x58 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
- .debug_ranges  0x00000000000013c8      0x100 ./LiteOS/components/power/los_pm.o
- .debug_ranges  0x00000000000014c8       0x48 ./Device/EPD.o
- .debug_ranges  0x0000000000001510       0x58 ./Device/EPD_SPI.o
- .debug_ranges  0x0000000000001568       0x90 ./Device/ESP8266.o
- .debug_ranges  0x00000000000015f8      0x228 ./Device/GUI_Paint.o
- .debug_ranges  0x0000000000001820       0x40 ./Debug/debug.o
- .debug_ranges  0x0000000000001860       0xd0 ./Core/core_riscv.o
+.debug_ranges   0x0000000000000000     0x1948
+ .debug_ranges  0x0000000000000000       0x78 ./User/ch32v30x_it.o
+ .debug_ranges  0x0000000000000078       0x18 ./User/main.o
+ .debug_ranges  0x0000000000000090       0x38 ./User/system_ch32v30x.o
+ .debug_ranges  0x00000000000000c8       0x28 ./User/thread_Eink.o
+ .debug_ranges  0x00000000000000f0       0x20 ./User/thread_WiFi.o
+ .debug_ranges  0x0000000000000110       0x18 ./User/user_usart.o
+ .debug_ranges  0x0000000000000128       0x28 ./Startup/startup_ch32v30x_D8C.o
+ .debug_ranges  0x0000000000000150       0x50 ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_ranges  0x00000000000001a0       0xa0 ./Peripheral/src/ch32v30x_gpio.o
+ .debug_ranges  0x0000000000000240       0x30 ./Peripheral/src/ch32v30x_misc.o
+ .debug_ranges  0x0000000000000270      0x198 ./Peripheral/src/ch32v30x_rcc.o
+ .debug_ranges  0x0000000000000408       0xe0 ./Peripheral/src/ch32v30x_usart.o
+ .debug_ranges  0x00000000000004e8       0x30 ./LiteOS/utils/los_debug.o
+ .debug_ranges  0x0000000000000518       0x28 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_ranges  0x0000000000000540       0xa0 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_ranges  0x00000000000005e0      0x2b0 ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_ranges  0x0000000000000890       0x68 ./LiteOS/kernel/src/los_event.o
+ .debug_ranges  0x00000000000008f8       0x28 ./LiteOS/kernel/src/los_init.o
+ .debug_ranges  0x0000000000000920       0x70 ./LiteOS/kernel/src/los_mux.o
+ .debug_ranges  0x0000000000000990      0x1d0 ./LiteOS/kernel/src/los_queue.o
+ .debug_ranges  0x0000000000000b60      0x1f8 ./LiteOS/kernel/src/los_sched.o
+ .debug_ranges  0x0000000000000d58       0x98 ./LiteOS/kernel/src/los_sem.o
+ .debug_ranges  0x0000000000000df0       0xd0 ./LiteOS/kernel/src/los_sortlink.o
+ .debug_ranges  0x0000000000000ec0      0x108 ./LiteOS/kernel/src/los_swtmr.o
+ .debug_ranges  0x0000000000000fc8      0x2b8 ./LiteOS/kernel/src/los_task.o
+ .debug_ranges  0x0000000000001280       0x48 ./LiteOS/kernel/src/los_tick.o
+ .debug_ranges  0x00000000000012c8       0x38 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_ranges  0x0000000000001300       0x20 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
+ .debug_ranges  0x0000000000001320       0x68 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_ranges  0x0000000000001388       0x58 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_ranges  0x00000000000013e0      0x100 ./LiteOS/components/power/los_pm.o
+ .debug_ranges  0x00000000000014e0       0x48 ./Device/EPD.o
+ .debug_ranges  0x0000000000001528       0x58 ./Device/EPD_SPI.o
+ .debug_ranges  0x0000000000001580       0x90 ./Device/ESP8266.o
+ .debug_ranges  0x0000000000001610      0x228 ./Device/GUI_Paint.o
+ .debug_ranges  0x0000000000001838       0x40 ./Debug/debug.o
+ .debug_ranges  0x0000000000001878       0xd0 ./Core/core_riscv.o
 
-.debug_line     0x0000000000000000    0x1f6ad
- .debug_line    0x0000000000000000      0x81c ./User/ch32v30x_it.o
- .debug_line    0x000000000000081c      0x604 ./User/main.o
- .debug_line    0x0000000000000e20      0x8bf ./User/system_ch32v30x.o
- .debug_line    0x00000000000016df      0x7c1 ./User/thread_Eink.o
- .debug_line    0x0000000000001ea0      0x561 ./User/thread_WiFi.o
- .debug_line    0x0000000000002401      0x35b ./User/user_usart.o
- .debug_line    0x000000000000275c      0x128 ./Startup/startup_ch32v30x_D8C.o
- .debug_line    0x0000000000002884      0x355 ./Peripheral/src/ch32v30x_dbgmcu.o
- .debug_line    0x0000000000002bd9     0x1228 ./Peripheral/src/ch32v30x_gpio.o
- .debug_line    0x0000000000003e01      0x3a6 ./Peripheral/src/ch32v30x_misc.o
- .debug_line    0x00000000000041a7     0x195a ./Peripheral/src/ch32v30x_rcc.o
- .debug_line    0x0000000000005b01      0xec7 ./Peripheral/src/ch32v30x_usart.o
- .debug_line    0x00000000000069c8      0x52c ./LiteOS/utils/los_debug.o
- .debug_line    0x0000000000006ef4     0x1560 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
- .debug_line    0x0000000000008454     0x18cd ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
- .debug_line    0x0000000000009d21     0x29da ./LiteOS/kernel/src/mm/los_memory.o
- .debug_line    0x000000000000c6fb      0xb12 ./LiteOS/kernel/src/los_event.o
- .debug_line    0x000000000000d20d      0x704 ./LiteOS/kernel/src/los_init.o
- .debug_line    0x000000000000d911      0xdb6 ./LiteOS/kernel/src/los_mux.o
- .debug_line    0x000000000000e6c7     0x1bb7 ./LiteOS/kernel/src/los_queue.o
- .debug_line    0x000000000001027e     0x1b5f ./LiteOS/kernel/src/los_sched.o
- .debug_line    0x0000000000011ddd      0xdd8 ./LiteOS/kernel/src/los_sem.o
- .debug_line    0x0000000000012bb5      0xa87 ./LiteOS/kernel/src/los_sortlink.o
- .debug_line    0x000000000001363c     0x1788 ./LiteOS/kernel/src/los_swtmr.o
- .debug_line    0x0000000000014dc4     0x276d ./LiteOS/kernel/src/los_task.o
- .debug_line    0x0000000000017531      0x6a4 ./LiteOS/kernel/src/los_tick.o
- .debug_line    0x0000000000017bd5      0x660 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
- .debug_line    0x0000000000018235      0x35d ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
- .debug_line    0x0000000000018592      0x767 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
- .debug_line    0x0000000000018cf9      0x76b ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
- .debug_line    0x0000000000019464     0x150c ./LiteOS/components/power/los_pm.o
- .debug_line    0x000000000001a970      0x102 ./Fonts/font24CN.o
- .debug_line    0x000000000001aa72      0x85d ./Device/EPD.o
- .debug_line    0x000000000001b2cf      0x69d ./Device/EPD_SPI.o
- .debug_line    0x000000000001b96c      0xec6 ./Device/ESP8266.o
- .debug_line    0x000000000001c832     0x223d ./Device/GUI_Paint.o
- .debug_line    0x000000000001ea6f      0x710 ./Debug/debug.o
- .debug_line    0x000000000001f17f      0x52e ./Core/core_riscv.o
+.debug_line     0x0000000000000000    0x1f93b
+ .debug_line    0x0000000000000000      0xa90 ./User/ch32v30x_it.o
+ .debug_line    0x0000000000000a90      0x604 ./User/main.o
+ .debug_line    0x0000000000001094      0x8bf ./User/system_ch32v30x.o
+ .debug_line    0x0000000000001953      0x7c1 ./User/thread_Eink.o
+ .debug_line    0x0000000000002114      0x563 ./User/thread_WiFi.o
+ .debug_line    0x0000000000002677      0x35b ./User/user_usart.o
+ .debug_line    0x00000000000029d2      0x128 ./Startup/startup_ch32v30x_D8C.o
+ .debug_line    0x0000000000002afa      0x355 ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_line    0x0000000000002e4f     0x1228 ./Peripheral/src/ch32v30x_gpio.o
+ .debug_line    0x0000000000004077      0x3a6 ./Peripheral/src/ch32v30x_misc.o
+ .debug_line    0x000000000000441d     0x195a ./Peripheral/src/ch32v30x_rcc.o
+ .debug_line    0x0000000000005d77      0xec7 ./Peripheral/src/ch32v30x_usart.o
+ .debug_line    0x0000000000006c3e      0x52c ./LiteOS/utils/los_debug.o
+ .debug_line    0x000000000000716a     0x1560 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_line    0x00000000000086ca     0x18cd ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_line    0x0000000000009f97     0x29da ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_line    0x000000000000c971      0xb12 ./LiteOS/kernel/src/los_event.o
+ .debug_line    0x000000000000d483      0x704 ./LiteOS/kernel/src/los_init.o
+ .debug_line    0x000000000000db87      0xdb6 ./LiteOS/kernel/src/los_mux.o
+ .debug_line    0x000000000000e93d     0x1bb7 ./LiteOS/kernel/src/los_queue.o
+ .debug_line    0x00000000000104f4     0x1b5f ./LiteOS/kernel/src/los_sched.o
+ .debug_line    0x0000000000012053      0xdd8 ./LiteOS/kernel/src/los_sem.o
+ .debug_line    0x0000000000012e2b      0xa87 ./LiteOS/kernel/src/los_sortlink.o
+ .debug_line    0x00000000000138b2     0x1788 ./LiteOS/kernel/src/los_swtmr.o
+ .debug_line    0x000000000001503a     0x276d ./LiteOS/kernel/src/los_task.o
+ .debug_line    0x00000000000177a7      0x6a4 ./LiteOS/kernel/src/los_tick.o
+ .debug_line    0x0000000000017e4b      0x660 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_line    0x00000000000184ab      0x35d ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
+ .debug_line    0x0000000000018808      0x767 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_line    0x0000000000018f6f      0x76b ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_line    0x00000000000196da     0x150c ./LiteOS/components/power/los_pm.o
+ .debug_line    0x000000000001abe6      0x102 ./Fonts/font24CN.o
+ .debug_line    0x000000000001ace8      0x85d ./Device/EPD.o
+ .debug_line    0x000000000001b545      0x69d ./Device/EPD_SPI.o
+ .debug_line    0x000000000001bbe2      0xede ./Device/ESP8266.o
+ .debug_line    0x000000000001cac0     0x223d ./Device/GUI_Paint.o
+ .debug_line    0x000000000001ecfd      0x710 ./Debug/debug.o
+ .debug_line    0x000000000001f40d      0x52e ./Core/core_riscv.o
 
-.debug_str      0x0000000000000000     0x5914
- .debug_str     0x0000000000000000      0x873 ./User/ch32v30x_it.o
-                                        0x917 (size before relaxing)
- .debug_str     0x0000000000000873      0x34f ./User/main.o
-                                        0xa9d (size before relaxing)
- .debug_str     0x0000000000000bc2       0xfe ./User/system_ch32v30x.o
+.debug_str      0x0000000000000000     0x5972
+ .debug_str     0x0000000000000000      0x8d1 ./User/ch32v30x_it.o
+                                        0x96f (size before relaxing)
+ .debug_str     0x00000000000008d1      0x34f ./User/main.o
+                                        0xa0d (size before relaxing)
+ .debug_str     0x0000000000000c20       0xfe ./User/system_ch32v30x.o
                                         0x6e1 (size before relaxing)
- .debug_str     0x0000000000000cc0      0x4f2 ./User/thread_Eink.o
-                                        0xe56 (size before relaxing)
- .debug_str     0x00000000000011b2       0xd2 ./User/thread_WiFi.o
-                                        0xaa0 (size before relaxing)
- .debug_str     0x0000000000001284       0x67 ./User/user_usart.o
+ .debug_str     0x0000000000000d1e      0x4f2 ./User/thread_Eink.o
+                                        0xdcc (size before relaxing)
+ .debug_str     0x0000000000001210       0xd2 ./User/thread_WiFi.o
+                                        0xa01 (size before relaxing)
+ .debug_str     0x00000000000012e2       0x67 ./User/user_usart.o
                                         0x699 (size before relaxing)
- .debug_str     0x00000000000012eb       0x2e ./Startup/startup_ch32v30x_D8C.o
+ .debug_str     0x0000000000001349       0x2e ./Startup/startup_ch32v30x_D8C.o
                                          0x61 (size before relaxing)
- .debug_str     0x0000000000001319       0x97 ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_str     0x0000000000001377       0x97 ./Peripheral/src/ch32v30x_dbgmcu.o
                                         0x63d (size before relaxing)
- .debug_str     0x00000000000013b0      0x258 ./Peripheral/src/ch32v30x_gpio.o
+ .debug_str     0x000000000000140e      0x258 ./Peripheral/src/ch32v30x_gpio.o
                                         0x9a7 (size before relaxing)
- .debug_str     0x0000000000001608      0x68f ./Peripheral/src/ch32v30x_misc.o
+ .debug_str     0x0000000000001666      0x68f ./Peripheral/src/ch32v30x_misc.o
                                         0xcb0 (size before relaxing)
- .debug_str     0x0000000000001c97      0x5c2 ./Peripheral/src/ch32v30x_rcc.o
+ .debug_str     0x0000000000001cf5      0x5c2 ./Peripheral/src/ch32v30x_rcc.o
                                         0xcd6 (size before relaxing)
- .debug_str     0x0000000000002259      0x369 ./Peripheral/src/ch32v30x_usart.o
+ .debug_str     0x00000000000022b7      0x369 ./Peripheral/src/ch32v30x_usart.o
                                         0xaf1 (size before relaxing)
- .debug_str     0x00000000000025c2      0x154 ./LiteOS/utils/los_debug.o
+ .debug_str     0x0000000000002620      0x154 ./LiteOS/utils/los_debug.o
                                         0x71a (size before relaxing)
- .debug_str     0x0000000000002716      0x3ad ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_str     0x0000000000002774      0x3ad ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
                                         0x938 (size before relaxing)
- .debug_str     0x0000000000002ac3      0x15e ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_str     0x0000000000002b21      0x15e ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
                                         0x888 (size before relaxing)
- .debug_str     0x0000000000002c21      0x74c ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_str     0x0000000000002c7f      0x74c ./LiteOS/kernel/src/mm/los_memory.o
                                        0x1013 (size before relaxing)
- .debug_str     0x000000000000336d      0x2fc ./LiteOS/kernel/src/los_event.o
+ .debug_str     0x00000000000033cb      0x2fc ./LiteOS/kernel/src/los_event.o
                                         0xc3c (size before relaxing)
- .debug_str     0x0000000000003669      0x160 ./LiteOS/kernel/src/los_init.o
+ .debug_str     0x00000000000036c7      0x160 ./LiteOS/kernel/src/los_init.o
                                         0xae9 (size before relaxing)
- .debug_str     0x00000000000037c9      0x155 ./LiteOS/kernel/src/los_mux.o
+ .debug_str     0x0000000000003827      0x155 ./LiteOS/kernel/src/los_mux.o
                                         0xcfe (size before relaxing)
- .debug_str     0x000000000000391e      0x2ed ./LiteOS/kernel/src/los_queue.o
+ .debug_str     0x000000000000397c      0x2ed ./LiteOS/kernel/src/los_queue.o
                                         0xf3e (size before relaxing)
- .debug_str     0x0000000000003c0b      0x490 ./LiteOS/kernel/src/los_sched.o
+ .debug_str     0x0000000000003c69      0x490 ./LiteOS/kernel/src/los_sched.o
                                         0xefa (size before relaxing)
- .debug_str     0x000000000000409b      0x109 ./LiteOS/kernel/src/los_sem.o
+ .debug_str     0x00000000000040f9      0x109 ./LiteOS/kernel/src/los_sem.o
                                         0xd24 (size before relaxing)
- .debug_str     0x00000000000041a4      0x130 ./LiteOS/kernel/src/los_sortlink.o
+ .debug_str     0x0000000000004202      0x130 ./LiteOS/kernel/src/los_sortlink.o
                                         0xab9 (size before relaxing)
- .debug_str     0x00000000000042d4      0x42b ./LiteOS/kernel/src/los_swtmr.o
+ .debug_str     0x0000000000004332      0x42b ./LiteOS/kernel/src/los_swtmr.o
                                        0x11c7 (size before relaxing)
- .debug_str     0x00000000000046ff      0x387 ./LiteOS/kernel/src/los_task.o
+ .debug_str     0x000000000000475d      0x387 ./LiteOS/kernel/src/los_task.o
                                        0x1133 (size before relaxing)
- .debug_str     0x0000000000004a86       0xb6 ./LiteOS/kernel/src/los_tick.o
+ .debug_str     0x0000000000004ae4       0xb6 ./LiteOS/kernel/src/los_tick.o
                                         0xbb3 (size before relaxing)
- .debug_str     0x0000000000004b3c       0xcc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_str     0x0000000000004b9a       0xcc ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
                                         0xf47 (size before relaxing)
- .debug_str     0x0000000000004c08       0x34 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
+ .debug_str     0x0000000000004c66       0x34 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_dispatch.o
                                          0x73 (size before relaxing)
- .debug_str     0x0000000000004c3c      0x100 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_str     0x0000000000004c9a      0x100 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
                                        0x124b (size before relaxing)
- .debug_str     0x0000000000004d3c       0x9e ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_str     0x0000000000004d9a       0x9e ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
                                         0xf5b (size before relaxing)
- .debug_str     0x0000000000004dda      0x3da ./LiteOS/components/power/los_pm.o
+ .debug_str     0x0000000000004e38      0x3da ./LiteOS/components/power/los_pm.o
                                         0xfee (size before relaxing)
- .debug_str     0x00000000000051b4       0x23 ./Fonts/font24CN.o
+ .debug_str     0x0000000000005212       0x23 ./Fonts/font24CN.o
                                         0x246 (size before relaxing)
- .debug_str     0x00000000000051d7       0x98 ./Device/EPD.o
+ .debug_str     0x0000000000005235       0x98 ./Device/EPD.o
                                         0x6de (size before relaxing)
- .debug_str     0x000000000000526f       0x1e ./Device/EPD_SPI.o
+ .debug_str     0x00000000000052cd       0x1e ./Device/EPD_SPI.o
                                         0xa0f (size before relaxing)
- .debug_str     0x000000000000528d      0x13a ./Device/ESP8266.o
+ .debug_str     0x00000000000052eb      0x13a ./Device/ESP8266.o
                                        0x103a (size before relaxing)
- .debug_str     0x00000000000053c7      0x3b8 ./Device/GUI_Paint.o
+ .debug_str     0x0000000000005425      0x3b8 ./Device/GUI_Paint.o
                                         0xbfd (size before relaxing)
- .debug_str     0x000000000000577f       0x6e ./Debug/debug.o
+ .debug_str     0x00000000000057dd       0x6e ./Debug/debug.o
                                         0x918 (size before relaxing)
- .debug_str     0x00000000000057ed      0x127 ./Core/core_riscv.o
+ .debug_str     0x000000000000584b      0x127 ./Core/core_riscv.o
                                         0x2d7 (size before relaxing)
 
 .comment        0x0000000000000000       0x33
@@ -5355,79 +5399,79 @@ OUTPUT(WCH-CH32V307VCT6-Eink-LiteOS.elf elf32-littleriscv)
  .comment       0x0000000000000033       0x34 ./Debug/debug.o
  .comment       0x0000000000000033       0x34 ./Core/core_riscv.o
 
-.debug_frame    0x0000000000000000     0x3978
- .debug_frame   0x0000000000000000       0x80 ./User/ch32v30x_it.o
- .debug_frame   0x0000000000000080       0x48 ./User/main.o
- .debug_frame   0x00000000000000c8       0x3c ./User/system_ch32v30x.o
- .debug_frame   0x0000000000000104       0x8c ./User/thread_Eink.o
- .debug_frame   0x0000000000000190       0x70 ./User/thread_WiFi.o
- .debug_frame   0x0000000000000200       0x58 ./User/user_usart.o
- .debug_frame   0x0000000000000258       0x70 ./Peripheral/src/ch32v30x_dbgmcu.o
- .debug_frame   0x00000000000002c8      0x174 ./Peripheral/src/ch32v30x_gpio.o
- .debug_frame   0x000000000000043c       0x30 ./Peripheral/src/ch32v30x_misc.o
- .debug_frame   0x000000000000046c      0x344 ./Peripheral/src/ch32v30x_rcc.o
- .debug_frame   0x00000000000007b0      0x1e4 ./Peripheral/src/ch32v30x_usart.o
- .debug_frame   0x0000000000000994       0x98 ./LiteOS/utils/los_debug.o
- .debug_frame   0x0000000000000a2c       0x84 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
- .debug_frame   0x0000000000000ab0       0x88 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
- .debug_frame   0x0000000000000b38      0x3b8 ./LiteOS/kernel/src/mm/los_memory.o
- .debug_frame   0x0000000000000ef0       0xec ./LiteOS/kernel/src/los_event.o
- .debug_frame   0x0000000000000fdc       0x80 ./LiteOS/kernel/src/los_init.o
- .debug_frame   0x000000000000105c       0xc8 ./LiteOS/kernel/src/los_mux.o
- .debug_frame   0x0000000000001124      0x238 ./LiteOS/kernel/src/los_queue.o
- .debug_frame   0x000000000000135c      0x308 ./LiteOS/kernel/src/los_sched.o
- .debug_frame   0x0000000000001664      0x128 ./LiteOS/kernel/src/los_sem.o
- .debug_frame   0x000000000000178c      0x114 ./LiteOS/kernel/src/los_sortlink.o
- .debug_frame   0x00000000000018a0      0x298 ./LiteOS/kernel/src/los_swtmr.o
- .debug_frame   0x0000000000001b38      0x4bc ./LiteOS/kernel/src/los_task.o
- .debug_frame   0x0000000000001ff4      0x11c ./LiteOS/kernel/src/los_tick.o
- .debug_frame   0x0000000000002110       0xa4 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
- .debug_frame   0x00000000000021b4       0xd0 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
- .debug_frame   0x0000000000002284       0x94 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
- .debug_frame   0x0000000000002318      0x194 ./LiteOS/components/power/los_pm.o
- .debug_frame   0x00000000000024ac      0x104 ./Device/EPD.o
- .debug_frame   0x00000000000025b0       0xd4 ./Device/EPD_SPI.o
- .debug_frame   0x0000000000002684      0x1bc ./Device/ESP8266.o
- .debug_frame   0x0000000000002840      0x394 ./Device/GUI_Paint.o
- .debug_frame   0x0000000000002bd4       0xb8 ./Debug/debug.o
- .debug_frame   0x0000000000002c8c      0x1a0 ./Core/core_riscv.o
- .debug_frame   0x0000000000002e2c       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
- .debug_frame   0x0000000000002e4c      0x148 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000000000002f94       0x88 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x000000000000301c       0x64 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x0000000000003080       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x00000000000030b0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memchr.o)
- .debug_frame   0x00000000000030d0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memcpy.o)
- .debug_frame   0x00000000000030f0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memmove.o)
- .debug_frame   0x0000000000003110       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000003150       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000003190       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-printf.o)
- .debug_frame   0x00000000000031e4       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-puts.o)
- .debug_frame   0x0000000000003238       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000003268       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00000000000032b0       0xa4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x0000000000003354       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-strstr.o)
- .debug_frame   0x0000000000003374       0x50 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00000000000033c4       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-writer.o)
- .debug_frame   0x00000000000033f4       0x3c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000000000003430       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-closer.o)
- .debug_frame   0x0000000000003460       0x7c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x00000000000034dc       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fstatr.o)
- .debug_frame   0x000000000000350c       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-isattyr.o)
- .debug_frame   0x000000000000353c       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-lseekr.o)
- .debug_frame   0x000000000000356c       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x000000000000359c       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00000000000035dc       0xe0 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x00000000000036bc       0xd0 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x000000000000378c       0x8c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000003818       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-readr.o)
- .debug_frame   0x0000000000003848       0x70 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-reent.o)
- .debug_frame   0x00000000000038b8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x00000000000038d8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(close.o)
- .debug_frame   0x00000000000038f8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(fstat.o)
- .debug_frame   0x0000000000003918       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(isatty.o)
- .debug_frame   0x0000000000003938       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(lseek.o)
- .debug_frame   0x0000000000003958       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(read.o)
+.debug_frame    0x0000000000000000     0x3980
+ .debug_frame   0x0000000000000000       0x88 ./User/ch32v30x_it.o
+ .debug_frame   0x0000000000000088       0x48 ./User/main.o
+ .debug_frame   0x00000000000000d0       0x3c ./User/system_ch32v30x.o
+ .debug_frame   0x000000000000010c       0x8c ./User/thread_Eink.o
+ .debug_frame   0x0000000000000198       0x70 ./User/thread_WiFi.o
+ .debug_frame   0x0000000000000208       0x58 ./User/user_usart.o
+ .debug_frame   0x0000000000000260       0x70 ./Peripheral/src/ch32v30x_dbgmcu.o
+ .debug_frame   0x00000000000002d0      0x174 ./Peripheral/src/ch32v30x_gpio.o
+ .debug_frame   0x0000000000000444       0x30 ./Peripheral/src/ch32v30x_misc.o
+ .debug_frame   0x0000000000000474      0x344 ./Peripheral/src/ch32v30x_rcc.o
+ .debug_frame   0x00000000000007b8      0x1e4 ./Peripheral/src/ch32v30x_usart.o
+ .debug_frame   0x000000000000099c       0x98 ./LiteOS/utils/los_debug.o
+ .debug_frame   0x0000000000000a34       0x84 ./LiteOS/third_party/bounds_checking_function/src/memcpy_s.o
+ .debug_frame   0x0000000000000ab8       0x88 ./LiteOS/third_party/bounds_checking_function/src/memset_s.o
+ .debug_frame   0x0000000000000b40      0x3b8 ./LiteOS/kernel/src/mm/los_memory.o
+ .debug_frame   0x0000000000000ef8       0xec ./LiteOS/kernel/src/los_event.o
+ .debug_frame   0x0000000000000fe4       0x80 ./LiteOS/kernel/src/los_init.o
+ .debug_frame   0x0000000000001064       0xc8 ./LiteOS/kernel/src/los_mux.o
+ .debug_frame   0x000000000000112c      0x238 ./LiteOS/kernel/src/los_queue.o
+ .debug_frame   0x0000000000001364      0x308 ./LiteOS/kernel/src/los_sched.o
+ .debug_frame   0x000000000000166c      0x128 ./LiteOS/kernel/src/los_sem.o
+ .debug_frame   0x0000000000001794      0x114 ./LiteOS/kernel/src/los_sortlink.o
+ .debug_frame   0x00000000000018a8      0x298 ./LiteOS/kernel/src/los_swtmr.o
+ .debug_frame   0x0000000000001b40      0x4bc ./LiteOS/kernel/src/los_task.o
+ .debug_frame   0x0000000000001ffc      0x11c ./LiteOS/kernel/src/los_tick.o
+ .debug_frame   0x0000000000002118       0xa4 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_context.o
+ .debug_frame   0x00000000000021bc       0xd0 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_interrupt.o
+ .debug_frame   0x000000000000228c       0x94 ./LiteOS/kernel/arch/risc-v/V4A/gcc/los_timer.o
+ .debug_frame   0x0000000000002320      0x194 ./LiteOS/components/power/los_pm.o
+ .debug_frame   0x00000000000024b4      0x104 ./Device/EPD.o
+ .debug_frame   0x00000000000025b8       0xd4 ./Device/EPD_SPI.o
+ .debug_frame   0x000000000000268c      0x1bc ./Device/ESP8266.o
+ .debug_frame   0x0000000000002848      0x394 ./Device/GUI_Paint.o
+ .debug_frame   0x0000000000002bdc       0xb8 ./Debug/debug.o
+ .debug_frame   0x0000000000002c94      0x1a0 ./Core/core_riscv.o
+ .debug_frame   0x0000000000002e34       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/rv32imacxw/ilp32\libgcc.a(_clzsi2.o)
+ .debug_frame   0x0000000000002e54      0x148 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000000000002f9c       0x88 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000003024       0x64 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000003088       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00000000000030b8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memchr.o)
+ .debug_frame   0x00000000000030d8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00000000000030f8       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000003118       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000003158       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000003198       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-printf.o)
+ .debug_frame   0x00000000000031ec       0x54 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-puts.o)
+ .debug_frame   0x0000000000003240       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000003270       0x48 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00000000000032b8       0xa4 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x000000000000335c       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-strstr.o)
+ .debug_frame   0x000000000000337c       0x50 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00000000000033cc       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x00000000000033fc       0x3c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x0000000000003438       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x0000000000003468       0x7c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00000000000034e4       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000003514       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x0000000000003544       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000003574       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00000000000035a4       0x40 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00000000000035e4       0xe0 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x00000000000036c4       0xd0 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x0000000000003794       0x8c f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000003820       0x30 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x0000000000003850       0x70 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000000000038c0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00000000000038e0       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(close.o)
+ .debug_frame   0x0000000000003900       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(fstat.o)
+ .debug_frame   0x0000000000003920       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(isatty.o)
+ .debug_frame   0x0000000000003940       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(lseek.o)
+ .debug_frame   0x0000000000003960       0x20 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(read.o)
 
 .stab           0x0000000000000000       0x84
  .stab          0x0000000000000000       0x24 f:/mounriver_studio/toolchain/risc-v embedded gcc/bin/../lib/gcc/riscv-none-embed/8.2.0/../../../../riscv-none-embed/lib/rv32imacxw/ilp32\libnosys.a(close.o)

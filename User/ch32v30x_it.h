@@ -23,7 +23,6 @@
 
 
 // 中断处理相关函数声明
-void RecvFrame_Init(void);              // 接收状态机初始化
 
 
 #endif /* __CH32V30x_IT_H */

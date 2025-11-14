@@ -14,10 +14,31 @@ from datetime import datetime
 
 # 帧协议定义
 FRAME_HEADER1 = 0xA5
-FRAME_HEADER2 = 0x5A
+FRAME_HEADER2 = 0x5A                               
 CMD_TYPE_IMAGE = 0xD1
 CMD_IMAGE_TRANSFER = 0x01
-MAX_IMAGE_DATA_LEN = 1022  # 最大图片数据长度(1024-2)
+MAX_IMAGE_DATA_LEN = 1022  # 最大图片数据长度（总包数1 + 包序号1 + 图像数据1022 = 1024字节）
+
+
+def crc16_calculate(data):
+    """
+    CRC-16校验计算函数(MODBUS多项式)
+    
+    Args:
+        data: 字节列表或字节串
+    
+    Returns:
+        int: CRC校验值
+    """
+    crc = 0xFFFF
+    for byte in data:
+        crc ^= byte
+        for _ in range(8):
+            if crc & 1:
+                crc = (crc >> 1) ^ 0xA001
+            else:
+                crc >>= 1
+    return crc 
 
 
 def extract_image_array(file_path):
@@ -87,8 +108,9 @@ def create_frame(total_packets, packet_num, data):
     # 3. 命令
     frame.append(CMD_IMAGE_TRANSFER)
     
-    # 4. 有效数据长度(高字节在前)
-    payload_len = len(data) + 2  # +2 for 总包数和包序号
+    # 4. 有效数据长度(高字节在前) 
+    # 长度 = 总包数(1) + 包序号(1) + 图片数据(可变) = 最大1024字节
+    payload_len = len(data) + 2  # +2 for 总包数和包序号（不包含CRC）
     frame.append((payload_len >> 8) & 0xFF)
     frame.append(payload_len & 0xFF)
     
@@ -100,6 +122,15 @@ def create_frame(total_packets, packet_num, data):
     
     # 7. 有效数据：图片数据
     frame.extend(data)
+    
+    # 8. 计算CRC（对命令类型、命令、长度和有效数据进行计算）
+    crc_data = [CMD_TYPE_IMAGE, CMD_IMAGE_TRANSFER, (payload_len >> 8) & 0xFF, payload_len & 0xFF]
+    crc_data.extend(frame[6:])  # 添加有效数据（总包数、包序号、图片数据）
+    crc_value = crc16_calculate(crc_data)
+    
+    # 9. 添加CRC（高字节在前）
+    frame.append((crc_value >> 8) & 0xFF)
+    frame.append(crc_value & 0xFF)
     
     return frame
 
@@ -247,11 +278,12 @@ def generate_h_file(image_name, frame_count, output_path):
         frame_count: 帧数量
         output_path: 输出文件路径
     """
-    print(f"生成头文件: {output_path}")
+    h_file = os.path.join(output_path, f"{image_name}_frames.h")
+    print(f"生成头文件: {h_file}")
     
     guard_name = f"__{image_name.upper()}_FRAMES_H__"
     
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(h_file, 'w', encoding='utf-8') as f:
         f.write(f"/*\n")
         f.write(f" * 图像帧数据头文件 - {image_name}\n")
         f.write(f" * 自动生成于: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")

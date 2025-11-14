@@ -22,6 +22,7 @@ RM := rm -rf
 -include LiteOS/components/cpup/subdir.mk
 -include LiteOS/components/backtrace/subdir.mk
 -include Fonts/subdir.mk
+-include Device/generated/subdir.mk
 -include Device/subdir.mk
 -include Debug/subdir.mk
 -include Core/subdir.mk
