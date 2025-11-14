@@ -86,13 +86,13 @@ void WIFI_USART_IRQHandler()
         switch (WIFI_RECVSTOP)
         {
 
+        //进入数据接收模式
         case WIFI_RECV_DATA:
             recDataProcessing(data);
             break;
             
-
+        //进入命令接收模式
         case WIFI_RECV_CMD:
-
             if(cmd_index < sizeof(WIFI_CMD) - 1)
             {
                 WIFI_CMD[cmd_index++] = data;
@@ -113,14 +113,11 @@ void WIFI_USART_IRQHandler()
 
                 WIFI_CMD_FLAG = 2;
             }
-            break;
-            
+            break;   
         default:
             cmd_index = 0;
             break;
         }
-        
-
         USART_ClearITPendingBit(WIFI_USARTx, USART_IT_RXNE);
     }
 }
@@ -167,14 +164,15 @@ void recDataProcessing(uint8_t data)
             g_frame_data.data_len |= data;
             
 
-            if(g_frame_data.data_len > 0 && g_frame_data.data_len <= MAX_DATA_LEN + 2)
+            //判断有效数据是否超过允许范围
+            if(g_frame_data.data_len > 0 && g_frame_data.data_len <= MAX_DATA_LEN)
             {
                 g_frame_data.data_index = 0;
                 g_frame_data.state = RECV_STATE_DATA;
             }
             else
             {
-                //printf("Invalid data length: %d\r\n", g_frame_data.data_len);
+                printf("Invalid data length: %d\r\n", g_frame_data.data_len);
                 g_frame_data.state = RECV_STATE_HEADER1;
             }
             break;

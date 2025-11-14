@@ -26,6 +26,7 @@ SUBDIRS := \
 Core \
 Debug \
 Device \
+Device/generated \
 Fonts \
 LiteOS/components/backtrace \
 LiteOS/components/cpup \

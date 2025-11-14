@@ -17,7 +17,7 @@ FRAME_HEADER1 = 0xA5
 FRAME_HEADER2 = 0x5A
 CMD_TYPE_IMAGE = 0xD1
 CMD_IMAGE_TRANSFER = 0x01
-MAX_IMAGE_DATA_LEN = 1022  # 最大图片数据长度(1024-2)
+MAX_IMAGE_DATA_LEN = 1022  # 最大图片数据长度(1024-2) 
 
 
 def extract_image_array(file_path):
@@ -247,11 +247,12 @@ def generate_h_file(image_name, frame_count, output_path):
         frame_count: 帧数量
         output_path: 输出文件路径
     """
-    print(f"生成头文件: {output_path}")
+    h_file = os.path.join(output_path, f"{image_name}_frames.h")
+    print(f"生成头文件: {h_file}")
     
     guard_name = f"__{image_name.upper()}_FRAMES_H__"
     
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(h_file, 'w', encoding='utf-8') as f:
         f.write(f"/*\n")
         f.write(f" * 图像帧数据头文件 - {image_name}\n")
         f.write(f" * 自动生成于: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")

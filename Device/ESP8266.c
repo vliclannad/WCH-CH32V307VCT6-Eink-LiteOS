@@ -243,7 +243,7 @@ uint8_t WIFI_SetTxMode(uint8_t modetype)
 uint8_t WIFI_SendCMD(uint8_t* cmdstring)
 {
     const uint8_t MAX_RETRY = 3;           // 最大重试次数
-    const uint16_t TIMEOUT_MS = 10000;      // 超时时间(毫秒)
+    const uint16_t TIMEOUT_MS = 20000;      // 超时时间(毫秒)
     const uint16_t CHECK_INTERVAL_MS = 10; // 检查间隔(毫秒)
     
     uint8_t retryCount = 0;

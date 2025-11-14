@@ -38,17 +38,26 @@ void ProcessImageData(uint8_t total_packets, uint8_t packet_num, const uint8_t* 
 // 处理一帧完整数据
 void ProcessFrame(FrameData_t* frame)
 {
-    if(frame->cmd_type == CMD_TYPE_IMAGE && frame->cmd == CMD_IMAGE_TRANSFER)
+    switch(frame->cmd_type)
     {
-        if(frame->data_len >= 2)
-        {
-            uint8_t total_packets = frame->data_buffer[0];
-            uint8_t packet_num = frame->data_buffer[1];
-            uint16_t image_data_len = frame->data_len - 2;
-            
-            ProcessImageData(total_packets, packet_num, 
-                           &frame->data_buffer[2], image_data_len);
-        }
+        case CMD_TYPE_IMAGE:
+            switch(frame->cmd)
+            {
+                case CMD_IMAGE_TRANSFER:
+                    if(frame->data_len > 2)
+                    {
+                        uint8_t total_packets = frame->data_buffer[0];
+                        uint8_t packet_num = frame->data_buffer[1];
+                        uint16_t image_data_len = frame->data_len - 2;
+                        ProcessImageData(total_packets, packet_num, &frame->data_buffer[2], image_data_len);
+                    }
+                    break;
+            }
+            break;
+        
+        default:
+            printf("未知命令类型: %02X\r\n", frame->cmd_type);
+            break;
     }
 }
 

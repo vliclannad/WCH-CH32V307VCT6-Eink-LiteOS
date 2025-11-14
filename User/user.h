@@ -10,8 +10,9 @@
 // 帧协议定义
 #define FRAME_HEADER1       0xA5
 #define FRAME_HEADER2       0x5A
-#define CMD_TYPE_IMAGE      0xD1
-#define CMD_IMAGE_TRANSFER  0x01
+
+#define CMD_TYPE_IMAGE      0xD1  //命令类型
+#define CMD_IMAGE_TRANSFER  0x01  //图像传输命令
 
 #define MAX_DATA_LEN        1024    // 最大有效数据长度
 
@@ -33,7 +34,7 @@ typedef struct {
     uint8_t cmd;                // 命令
     uint16_t data_len;          // 有效数据长度
     uint16_t data_index;        // 当前数据索引
-    uint8_t data_buffer[MAX_DATA_LEN + 2]; // 数据缓冲区(包含分包信息)
+    uint8_t data_buffer[MAX_DATA_LEN-2]; // 数据缓冲区(不包含分包信息)
     uint8_t total_packets;      // 分包总数
     uint8_t current_packet;     // 当前包序号
 } FrameData_t;
