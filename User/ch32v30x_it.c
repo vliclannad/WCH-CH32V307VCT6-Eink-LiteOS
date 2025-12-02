@@ -194,13 +194,8 @@ void recDataProcessing(uint8_t data)
         case RECV_STATE_LEN_LOW:
             g_frame_data.data_len |= data;
             
-<<<<<<< HEAD
             // 判断有效数据是否超过允许范围
             // data_len 包含: 总包数(1) + 包序号(1) + 图像数据(可变) = 最大1024字节
-=======
-
-            //判断有效数据是否超过允许范围
->>>>>>> 46d6483c1bfe9628b6953e5b2c01064a49835570
             if(g_frame_data.data_len > 0 && g_frame_data.data_len <= MAX_DATA_LEN)
             {
                 data_index = 0;
@@ -208,14 +203,9 @@ void recDataProcessing(uint8_t data)
             }
             else
             {
-<<<<<<< HEAD
                 printf("[ERR] Invalid data length: %d (max: %d)\r\n", 
                        g_frame_data.data_len, MAX_DATA_LEN);
                 recState = RECV_STATE_HEADER1;
-=======
-                printf("Invalid data length: %d\r\n", g_frame_data.data_len);
-                g_frame_data.state = RECV_STATE_HEADER1;
->>>>>>> 46d6483c1bfe9628b6953e5b2c01064a49835570
             }
             break;
             

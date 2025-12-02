@@ -115,7 +115,7 @@ void thread_Eink_Start(void)
     uint8_t *image_test = (uint8_t *)malloc(EPD_BUFFER_SIZE);
     Display_First(image_test);
     printf("First image prepared.\n");
-    EPD_DisplayImage(image_test);
+    //EPD_DisplayImage(image_test);
     printf("First image displayed.\n");
     EPD_Sleep();
     free(image_test);
@@ -123,12 +123,15 @@ void thread_Eink_Start(void)
     {
 		if(Button_Scan(&button1))
 		{
+           EPD_Init_Fast();//先唤醒
+           EPD_DisplayImage((const uint8_t*)image_test);
+		   EPD_Sleep();
 		}
 
 		if(Button_Scan(&button2))
 		{
-		   EPD_Init_Fast();
-           EPD_Update();
+		   EPD_Init_Fast();//先唤醒
+           EPD_DisplayImage((const uint8_t*)Image_Asuka);
 		   EPD_Sleep();
 		}
 

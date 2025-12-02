@@ -48,7 +48,7 @@
 void ESP8266_Delay(uint32_t ms)
 {
     volatile uint32_t i;
-    // 简单延时，96MHz下大约每毫秒需要96000次循环
+    // 初略延时，肯定不准
     while(ms--)
     {
         for(i = 0; i < 96000; i++);
@@ -163,10 +163,14 @@ void WIFI_Init(uint8_t mode_type)
     USART_ITConfig(WIFI_USARTx,USART_IT_RXNE,ENABLE);
     USART_Cmd(WIFI_USARTx,ENABLE);
 
+    //如果可以硬件重启WIFI模块，此处不必要，可改成硬件重启操作
+    WIFI_RECVSTOP = 3; //接收不做处理
     ESP8266_Delay(500);  // 1秒静默期（发送+++之前）
-    USER_UART_SendString(WIFI_USARTx, (uint8_t*)"+++");  // 发送+++（三个字符必须连续无间隔）
+    USER_UART_SendString(WIFI_USARTx, (uint8_t*)"+++");  // 发送+++,退出透传模式
     ESP8266_Delay(500);  // 1秒静默期（发送+++之后）
+    WIFI_RECVSTOP = WIFI_RECV_DATA;  // 切换接收模式为接收数据
     
+    printf("关闭回显\r\n");
     state = WIFI_SendCMD((uint8_t*)"ATE0\r\n");//关闭回显
     printf("状态：%d\r\n",state);
     if(state == WIFI_OK)
@@ -182,7 +186,7 @@ void WIFI_Init(uint8_t mode_type)
         if(WIFI_SetMode(WIFI_STATION) == WIFI_OK)              //设置STA模式
         printf("设置WIFI模式为STA模式成功\r\n");
         MODE_TYPE = 0;                          //标记当前模式为STA模式
-        //if(WIFI_SendCMD((uint8_t*)WIFI_AUTO_LINK))   //开启wifi模块自动连接
+        //if(WIFI_SendCMD((uint8_t*)WIFI_AUTO_LINK))   //开启wif自动连接
         WIFI_SendCMD((uint8_t*)WIFI_AUTO_LINK_OFF);    //关闭wifi自动连接
         //printf("WIFI模块自动连接成功\r\n");
         break;
@@ -281,7 +285,7 @@ uint8_t WIFI_SendCMD(uint8_t* cmdstring)
             }
             
             // 让出CPU给其他任务，避免占用CPU
-            LOS_TaskDelay(CHECK_INTERVAL_MS);
+            ESP8266_Delay(CHECK_INTERVAL_MS);
             waitTime += CHECK_INTERVAL_MS;
         }
         
@@ -298,7 +302,7 @@ uint8_t WIFI_SendCMD(uint8_t* cmdstring)
         if(retryCount < MAX_RETRY)
         {
             // 短暂延时后重试，使用RTOS延时函数
-            LOS_TaskDelay(100);  // 100ms重试间隔
+            ESP8266_Delay(100);  // 100ms重试间隔
         }
     }
     

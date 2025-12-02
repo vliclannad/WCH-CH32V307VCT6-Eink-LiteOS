@@ -34,12 +34,7 @@ typedef struct {
     uint8_t cmd_type;           // 命令类型
     uint8_t cmd;                // 命令
     uint16_t data_len;          // 有效数据长度
-<<<<<<< HEAD
     uint8_t data_buffer[MAX_DATA_LEN]; // 数据缓冲区(不包含分包信息)
-=======
-    uint16_t data_index;        // 当前数据索引
-    uint8_t data_buffer[MAX_DATA_LEN-2]; // 数据缓冲区(不包含分包信息)
->>>>>>> 46d6483c1bfe9628b6953e5b2c01064a49835570
     uint8_t total_packets;      // 分包总数
     uint8_t current_packet;     // 当前包序号
     uint16_t crc_received;      // 接收到的CRC值
